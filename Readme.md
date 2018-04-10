@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Vitalii Iashchuk](https://up.htmlacademy.ru/adaptive/14/user/93555).
-* Наставник: `Неизвестно`.
+* Наставник: [Лиза Позднякова](https://htmlacademy.ru/profile/lizzy).
 
 ---
 
