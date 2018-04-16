@@ -41,7 +41,7 @@
 
     <form class="program" action="https://echo.htmlacademy.ru" method="get">
 
-      <fieldset class="program__field program__field--info">
+      <div class="program__field program__field--info">
         <ul class="program__cat form-list">
           <li class="form-list__item">
             <label class="form-list__label" for="form-name">Имя:*</label>
@@ -56,10 +56,10 @@
             <input class="form-list__input form-list__input--age" type="text" name="age" placeholder="7" id="form-age">
           </li>
         </ul>
-      </fieldset>
+      </div>
 
 
-      <fieldset class="program__field program__field--category">
+      <div class="program__field program__field--category">
         <ul class="program__select select-list">
           <li class="select-list__item">
             <input class="select-list__input select-list__input--downweight" type="radio" name="downweight" id="form-downweight" checked>
@@ -74,11 +74,11 @@
             <label class="select-list__label" for="option-downweight">Не знаю (нужен ваш совет)</label>
           </li>
         </ul>
-      </fieldset>
+      </div>
 
 
-      <fieldset class="program__field program__field--contact">
-        <legend class="program__field-title">Контактные данные (владельца кота)</legend>
+      <div class="program__field program__field--contact">
+        <h2 class="program__field-title">Контактные данные (владельца кота)</h2>
         <ul class="program__cat-owner form-list">
           <li class="form-list__item">
             <label class="form-list__label" for="form-email">E-mail:*</label>
@@ -91,20 +91,20 @@
               required>
           </li>
         </ul>
-      </fieldset>
+      </div>
 
 
-      <fieldset class="program__field program__field--comment">
-        <legend class="program__field-title">Комментарий</legend>
+      <div class="program__field program__field--comment">
+        <h2 class="program__field-title">Комментарий</h2>
         <div class="program__message message">
           <label class="message__label" for="form-message">Введите комментарий:</label>
           <textarea class="message__text" name="message" placeholder="Расскажите обо всех повадках кота" cols="30" rows="10" id="form-message"></textarea>
         </div>
-      </fieldset>
+      </div>
 
 
-      <fieldset class="program__field program__field--additional">
-        <legend class="program__field-title">Дополнительно</legend>
+      <div class="program__field program__field--additional">
+        <h2 class="program__field-title">Дополнительно</h2>
         <ul class="program__option option-list">
           <li class="option-list__item">
             <input class="option-list__input option-list__input--sugar" type="checkbox" name="sugar" id="form-sugar" checked>
@@ -123,7 +123,7 @@
             <label class="option-list__label" for="form-vitamin">Витамины</label>
           </li>
         </ul>
-      </fieldset>
+      </div>
 
 
       <div class="program__send">
