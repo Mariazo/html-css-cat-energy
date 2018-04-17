@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: regular;
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+}
+
+.example {
+
+
+}
+
+
+.example__title {
+  color: #111111;
+  font-family: "Oswald";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+
+}
+
+.example__description {
+  color: #444444;
+  font-family: "Arial";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.example__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.example__item {
+
+  color: #444444;
+  font-family: "Arial";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+
+.example__value {
+  color: #111111;
+  font-family: "Oswald";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+
+
+}
+
+.example__text {
+  font-family: "Arial";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+
+
+}
+
+.example__cost {
+  color: #111111;
+  font-family: "Oswald";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+
+
+}
+

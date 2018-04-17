@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: regular;
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+}
+
+
+
+
+.button {
+  /*padding: 14px 74px 11px 73px;*/
+  display: block;
+  width: 280px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  background-color: #68b738;
+
+  text-align: center;
+  color: #ffffff;
+  font-family: "Oswald";
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+
+  outline: 1px dashed black;
+  margin: 20px; /*временно*/
+}
+
+
+.button--green {
+  background-color: #68b738;
+  color: #ffffff;
+
+}
+
+.button--gray {
+  background-color: #f2f2f2;
+  color: #444444;
+
+}

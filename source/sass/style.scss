@@ -1,3 +1,56 @@
-body {
-    background:  orange;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
 }
+
+
+
+
+
+@import 'academy';
+@import 'additional';
+
+@import 'advantage';
+@import 'button';
+@import 'catalog';
+
+@import 'category';
+@import 'contact';
+@import 'example';
+@import 'footer-logo';
+@import 'form-list';
+@import 'goods';
+
+@import 'header-logo';
+@import 'main-nav';
+@import 'message';
+
+@import 'method';
+@import 'option-list';
+
+
+@import 'page-footer';
+@import 'page-header';
+@import 'page-main';
+@import 'product-add';
+@import 'product-card';
+@import 'program';
+@import 'promo';
+@import 'select-list';
+
+
+@import 'site-list';
+@import 'slider';
+@import 'social-list';
+@import 'social';
+
+
