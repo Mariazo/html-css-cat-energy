@@ -1,5 +1,3 @@
-.goods {}
-
 .goods__title {
   color: $black-light;
   font-family: $default-font;
@@ -8,8 +6,6 @@
   line-height: 16px;
   text-transform: uppercase;
 }
-
-.goods__specification {}
 
 .goods__value {
   color: $gray;
