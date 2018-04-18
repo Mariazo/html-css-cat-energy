@@ -1,34 +1,38 @@
-@font-face {
-  font-family: "Oswald";
-  font-weight: 400;
-  font-style: regular;
-  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
-}
-
 .method {
-
-
+  text-align: center;
+  outline: 2px dashed red;
 }
 
 .method__title {
-
-  text-align: center;
-  color: #000000;
-  font-family: "Oswald";
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 0;
+  padding-top: 30px;
+  color: $white;
+  font-family: $default-font;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  outline: 1px dashed blue;
 }
 
 .method__tagline {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
   text-align: center;
-  color: #000000;
-  font-family: "Oswald";
+  color: $white;
+  font-family: $default-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  outline: 1px dashed blue;
+}
+
+.method__product {
+  text-align: center;
+  outline: 1px dashed blue;
 }
 
 .method__button {}

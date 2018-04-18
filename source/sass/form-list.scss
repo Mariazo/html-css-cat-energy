@@ -1,47 +1,31 @@
-@font-face {
-  font-family: "Oswald";
-  font-weight: 400;
-  font-style: regular;
-  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
-}
-
-
-
-
-
 .form-list {
   margin: 0;
   padding: 0;
   list-style: none;
-
-
+  outline: 1px dashed red;
 }
 
 .form-list__item {
-
-
+  padding: 15px 0;
 }
 
-
 .form-list__label {
-  color: #222222;
-  font-family: "Oswald";
+  color: $black-light;
+  font-family: $default-font;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-
-
 }
 
 .form-list__input {
-  color: #444444;
-  font-family: "Oswald";
+  margin-left: 15px;
+  padding: 12px 0;
+  padding-left: 15px;
+  color: $gray;
+  font-family: $default-font;
   font-size: 16px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 17px;
   text-transform: uppercase;
-
-
-
 }

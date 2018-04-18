@@ -1,41 +1,17 @@
-@font-face {
-  font-family: "Oswald";
-  font-weight: 400;
-  font-style: regular;
-  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
-}
-
-
-
-
-.program {
-
-
-}
-
-
+.program {}
 
 .program__field-title {
-  color: #111111;
-  font-family: "Oswald";
+  color: $black-light;
+  font-family: $default-font;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-
-
-
 }
 
-
 .program__warning {
-  color: #444444;
-  font-family: "Arial";
+  color: $gray;
+  font-family: $second-font;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
-
-
-
 }
-
-

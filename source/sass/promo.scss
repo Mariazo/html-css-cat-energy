@@ -1,25 +1,26 @@
-
-
-
 .promo {
-
-
+  margin: 40px 20px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: $green;
+  min-width: 280px;
+  min-height: 289px;
+  text-align: center;
+  outline: 1px dashed red;
 }
 
 .promo__link {
   text-decoration: none;
-
 }
 
 .promo__offer {
-
-  color: #ffffff;
-  color: #000000; /*временно*/
-  font-family: "Arial";
+  margin: 0 60px;
+  padding-top: 190px;
+  color: $white;
+  font-family: $second-font;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-
-
-
 }
