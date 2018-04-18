@@ -1,0 +1,36 @@
+.button {
+  display: block;
+  width: 280px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  text-align: center;
+  font-family: $default-font;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  outline: 1px dashed black;
+  margin: 0 auto;
+}
+
+/*
+.button--xs {}
+
+.button--small {}
+
+.button--medium {}
+
+.button--large {}
+*/
+
+.button--green {
+  background-color: $green;
+  color: $white;
+}
+
+.button--gray {
+  background-color: $gray-light;
+  color: $gray;
+}

@@ -1,0 +1,31 @@
+.form-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: 1px dashed red;
+}
+
+.form-list__item {
+  padding: 15px 0;
+}
+
+.form-list__label {
+  color: $black-light;
+  font-family: $default-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form-list__input {
+  margin-left: 15px;
+  padding: 12px 0;
+  padding-left: 15px;
+  color: $gray;
+  font-family: $default-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17px;
+  text-transform: uppercase;
+}

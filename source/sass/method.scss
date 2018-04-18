@@ -1,0 +1,36 @@
+.method {
+  text-align: center;
+  outline: 2px dashed red;
+}
+
+.method__title {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 0;
+  padding-top: 30px;
+  color: $white;
+  font-family: $default-font;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  outline: 1px dashed blue;
+}
+
+.method__tagline {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  text-align: center;
+  color: $white;
+  font-family: $default-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  outline: 1px dashed blue;
+}
+
+.method__product {
+  text-align: center;
+  outline: 1px dashed blue;
+}

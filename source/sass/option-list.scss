@@ -1,0 +1,18 @@
+.option-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.option-list__item {
+  padding: 15px 0;
+}
+
+.option-list__label {
+  color: $black-light;
+  font-family: $default-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}

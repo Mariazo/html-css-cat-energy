@@ -1,0 +1,30 @@
+.contact {
+  outline: 2px dashed red;
+}
+
+/*
+.contact__info {}
+*/
+
+.contact__tagline {
+  color: $black-light;
+  font-family: $default-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contact__address {
+  color: $gray;
+  font-family: $second-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/*
+.contact__map {}
+
+.contact__image {}
+*/

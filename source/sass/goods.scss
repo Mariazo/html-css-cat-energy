@@ -1,0 +1,24 @@
+.goods__title {
+  color: $black-light;
+  font-family: $default-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.goods__value {
+  color: $gray;
+  font-family: $second-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.goods__price {
+  color: $gray;
+  font-family: $second-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}

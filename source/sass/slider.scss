@@ -1,0 +1,22 @@
+/*
+.slider {}
+
+.slider__toggle {}
+
+.slider__slides {}
+
+.slider__item {}
+
+.slider__image {}
+
+.slider__control {}
+*/
+
+.slider__button {
+  color: $black-light;
+  font-family: $default-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
