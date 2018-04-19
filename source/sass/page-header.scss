@@ -1,11 +1,28 @@
 .page-header {
   position: relative;
+
+
+
+  outline: 2px dotted red;
 }
+
+.page-header__wrapper {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+
+
+}
+
 
 .page-header--background {
   &::after {
     position: absolute;
-    left: 0;
+
+    right: 0;
     display: block;
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -19,8 +36,52 @@
   }
 }
 
+
+.page-header__nav {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+
+
+}
+
+
+
+.page-header__logo {
+
+  margin-top: 11px;
+  margin-bottom: 13px;
+
+
+
+
+
+
+}
+
 /*
 .page-header__title {}
-
-.page-header__toggle {}
 */
+
+
+.page-header__toggle {
+
+
+
+
+}
+
+
+
+
+.container {
+  min-width: 320px;
+  padding: 0 20px;
+
+
+
+
+
+}
+

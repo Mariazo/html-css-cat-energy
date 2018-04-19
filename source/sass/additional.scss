@@ -1,3 +1,12 @@
+.additional {
+  outline: 2px dotted black;
+}
+
+.additional__item {
+  outline: 1px dashed red;
+
+}
+
 .additional__title {
   color: $black-light;
   font-family: $default-font;
