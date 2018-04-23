@@ -1,11 +1,12 @@
 .select-list {
   margin: 0;
   padding: 0;
+  padding-top: 32px;
   list-style: none;
 }
 
 .select-list__item {
-  padding: 15px 0;
+  margin-bottom: 33px;
 }
 
 .select-list__label {
@@ -15,4 +16,18 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .select-list__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .select-list__input {
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 20px;
+    line-height: 20px;
+  }
 }

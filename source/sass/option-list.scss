@@ -16,3 +16,32 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .option-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .option-list__item {
+    width: 50%;
+    padding: 25px 0;
+  }
+
+  .option-list__input {
+    margin-right: 20px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .option-list__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .option-list__item {
+    width: 25%;
+  }
+}

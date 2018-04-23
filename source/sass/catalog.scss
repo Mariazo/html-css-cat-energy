@@ -1,3 +1,11 @@
-.catalog {
-  outline: 2px dashed magenta;
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    margin-bottom: 140px;
+  }
 }

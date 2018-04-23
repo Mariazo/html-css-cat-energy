@@ -1,3 +1,9 @@
+.academy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .academy__title {
   color: $gray;
   font-family: $default-font;

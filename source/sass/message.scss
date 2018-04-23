@@ -6,4 +6,18 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  padding: 13px;
+}
+
+@media (min-width: $tablet-width) {
+  .message__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .message__text {
+    min-height: 174px;
+  }
 }

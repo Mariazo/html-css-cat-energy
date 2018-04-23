@@ -34,3 +34,22 @@ img {
 a {
   text-decoration: none;
 }
+
+.container {
+  min-width: 320px;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    min-width: 708px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    min-width: 1220px;
+    padding: 0 40px;
+  }
+}

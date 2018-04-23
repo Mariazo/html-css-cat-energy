@@ -1,30 +1,18 @@
-.page-header {
-  position: relative;
-
-
-
-  outline: 2px dotted red;
-}
-
-.page-header__wrapper {
-
+.logo-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-
-
-
+  height: 65px;
 }
 
-
 .page-header--background {
+  position: relative;
+
   &::after {
     position: absolute;
-
     right: 0;
     display: block;
-    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-image: url("../img/index-background-desktop.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -36,52 +24,53 @@
   }
 }
 
-
-.page-header__nav {
-  position: absolute;
-  top: 70px;
-  left: 0;
-  width: 100%;
-
-
-}
-
-
-
 .page-header__logo {
-
   margin-top: 11px;
   margin-bottom: 13px;
-
-
-
-
-
-
 }
 
-/*
-.page-header__title {}
-*/
+/*NEW*/
 
-
-.page-header__toggle {
-
-
-
-
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
+  .page-header--background {
+    &::after {
+      display: none;
+    }
+  }
 
+  .page-header__toggle {
+    display: none;
+  }
 
-.container {
-  min-width: 320px;
-  padding: 0 20px;
-
-
-
-
-
+  .page-header__list {
+    display: flex;
+    justify-content: space-between;
+    min-width: 440px;
+  }
 }
 
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    padding-top: 54px;
+  }
+
+  .page-header--background {
+    &::after {
+      display: block;
+      top: 0;
+      width: 47%;
+      min-height: 688px;
+      background-size: cover;
+    }
+  }
+}
