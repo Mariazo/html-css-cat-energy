@@ -1,5 +1,6 @@
 .additional__list {
   list-style: none;
+
   border-top: 1px solid $gray-lighter;
 }
 
@@ -8,11 +9,12 @@
   padding: 0;
   padding-top: 30px;
   padding-bottom: 30px;
-  color: $black-light;
-  font-family: $default-font;
-  font-size: 24px;
+
   font-weight: 400;
+  font-size: 24px;
   line-height: 24px;
+  font-family: $default-font;
+  color: $black-light;
 }
 
 @media (min-width: $tablet-width) {
