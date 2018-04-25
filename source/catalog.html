@@ -42,7 +42,7 @@
 
   <main class="page-main">
     <div class="container">
-      <h1 class="page-main__title">Каталог продукции</h1>
+      <h1 class="page-main__title page-main__title--catalog">Каталог продукции</h1>
 
       <section class="catalog">
         <h2 class="visually-hidden">Основные товары</h2>
@@ -244,7 +244,7 @@
               <h3 class="goods__title">Сахарозаменитель</h3>
               <table class="goods__specification">
                 <tr class="goods__line">
-                  <td class="goods__value">1 Упаковка (100 г)</td>
+                  <td class="goods__value">1 упаковка (100 г)</td>
                   <td class="goods__price">200 р.</td>
                 </tr>
               </table>
@@ -280,7 +280,7 @@
               <h3 class="goods__title">Витамины</h3>
               <table class="goods__specification">
                 <tr class="goods__line">
-                  <td class="goods__value">1 Упаковка (30 г)</td>
+                  <td class="goods__value">1 упаковка (30 г)</td>
                   <td class="goods__price">300 р.</td>
                 </tr>
               </table>
@@ -290,7 +290,7 @@
 
           <div class="additional__promo promo">
             <a class="promo__link" href="#">
-              <p class="promo__offer">Закажите все и получите чехол для кота в подарок!</p>
+              <p class="promo__offer">Закажите все<br> и получите чехол для кота в подарок!</p>
             </a>
           </div>
         </div>
@@ -299,12 +299,14 @@
     </div>
     <section class="contact">
       <h2 class="visually-hidden">Наши контакты</h2>
+<div class="contact__info--wrapper contact__info--color container">
 
       <div class="contact__info">
-        <p class="contact__tagline">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contact__tagline">Приглашаем<br> к сотрудничеству дилеров!</p>
         <p class="contact__address">ул. Большая Конюшенная, д. 19/8
           <span class="contact__town">Санкт-Петербург</span>
         </p>
+      </div>
       </div>
 
       <div class="contact__map">
@@ -316,8 +318,9 @@
 
 
 
-  <footer class="page-footer container">
+  <footer class="page-footer page-footer--color ">
 
+    <div class="page-footer__wrapper container">
     <div class="page-footer__logo footer-logo">
       <a class="footer-logo__link" href="index.html">
         <img class="footer-logo__title" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
@@ -326,21 +329,26 @@
 
     <ul class="page-footer__social social-list">
 
-      <li class="social-list__item social">
-        <a class="social__link" href="#">
-          <span class="visually-hidden0">VK.com</span>
+      <li class="social-list__item social-list__item--vk social">
+
+
+        <a class="social__link social__link--vk" href="#">
+
+          <span class="visually-hidden">VK.com</span>
         </a>
       </li>
 
       <li class="social-list__item social">
-        <a class="social__link" href="#">
-          <span class="visually-hidden0">Instagram</span>
+        <a class="social__link social__link--insta" href="#">
+
+          <span class="visually-hidden">Instagram</span>
         </a>
       </li>
 
       <li class="social-list__item social">
-        <a class="social__link" href="#">
-          <span class="visually-hidden0">Facebook</span>
+        <a class="social__link social__link--fb" href="#">
+
+          <span class="visually-hidden">Facebook</span>
         </a>
       </li>
     </ul>
@@ -350,6 +358,7 @@
       <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
         <img class="academy__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
       </a>
+    </div>
     </div>
   </footer>
 

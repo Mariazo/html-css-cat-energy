@@ -5,10 +5,14 @@
 }
 
 .option-list__item {
-  padding: 15px 0;
+  padding-top: 13px;
+  padding-bottom: 12px;
+
 }
 
 .option-list__label {
+  padding-left: 30px;
+
   color: $black-light;
   font-family: $default-font;
   font-size: 16px;
@@ -20,11 +24,12 @@
 @media (min-width: $tablet-width) {
   .option-list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
   .option-list__item {
-    width: 50%;
+    width: 45%;
     padding: 25px 0;
   }
 
@@ -35,6 +40,8 @@
   }
 
   .option-list__label {
+    padding-left: 22px;
+
     font-size: 20px;
     line-height: 20px;
   }
@@ -42,6 +49,6 @@
 
 @media (min-width: $desktop-width) {
   .option-list__item {
-    width: 25%;
+    width: 20%;
   }
 }

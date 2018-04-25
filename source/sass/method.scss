@@ -1,41 +1,48 @@
 .method {
   position: relative;
-  padding-top: 30px;
+
   text-align: center;
   /*outline: 2px dashed red;*/
 }
 
 .method__title {
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-top: 26px;
+  margin-bottom: 24px;
   padding: 0;
-  color: $white;
-  font-family: $default-font;
+
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  font-weight: 400;
+  font-family: $default-font;
+  color: $white;
   /*outline: 1px dashed blue;*/
 }
 
 .method__tagline {
   margin: 0;
-  margin-bottom: 330px;
+  margin-bottom: 303px;
   padding: 0;
-  text-align: center;
-  color: $white;
-  font-family: $default-font;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
+  font-family: $default-font;
+  text-align: center;
+  color: $white;
   text-transform: uppercase;
   /*outline: 1px dashed blue;*/
 }
 
 .method__product {
   position: absolute;
-  top: 150px;
-  left: 0;
+  top: 140px;
+  left: 15px;
   z-index: -1;
+
+  width: 280px;
+  height: 270px;
+
   text-align: center;
   /*outline: 1px dashed blue;*/
 }
@@ -43,45 +50,53 @@
 @media (min-width: $tablet-width) {
   .method {
     position: relative;
+
     display: flex;
-    min-height: 836px;
     flex-direction: column;
-    padding-top: 60px;
-    padding-left: 90px;
+    min-height: 836px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 117px;
   }
 
   .method__title {
     width: 420px;
-    margin-bottom: 50px;
+    margin-bottom: 41px;
     margin-left: 0;
-    text-align: left;
+
     font-size: 60px;
     line-height: 60px;
+    text-align: left;
     color: $black-light;
   }
 
   .method__tagline {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
+
     font-size: 20px;
     line-height: 20px;
-    color: $black-light;
     text-align: left;
+    color: $black-light;
   }
 
   .method__button {
     width: 245px;
     padding-top: 16px;
     padding-bottom: 16px;
-    font-size: 20px;
+
     font-weight: 400;
+    font-size: 20px;
     line-height: 20px;
   }
 
   .method__product {
     position: absolute;
-    top: 270px;
-    left: 90px;
+    top: 245px;
+    left: 35px;
     z-index: -1;
+
+    width: 709px;
+    height: 609px;
   }
 }
 
@@ -89,22 +104,27 @@
   .method {
     width: 570px;
     min-height: 569px;
-    padding-top: 115px;
-    padding-left: 120px;
+    margin-bottom: 23px;
+    padding-top: 80px;
+    padding-left: 80px;
+
     text-align: left;
   }
 
   .method__title {
-    margin-bottom: 33px;
+    margin-bottom: 41px;
   }
 
   .method__tagline {
-    margin-bottom: 50px;
+    margin-bottom: 53px;
   }
 
   .method__product {
     position: absolute;
-    top: 30px;
-    left: 490px;
+    top: 25px;
+    left: 450px;
+
+    width: 552px;
+    height: 499px;
   }
 }

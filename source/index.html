@@ -46,7 +46,7 @@
 
   <main class="page-main">
 
-    <section class="method">
+    <section class="method container">
       <h1 class="method__title">Функциональное питание для котов</h1>
       <p class="method__tagline">Занялся собой? Займись котом!</p>
 
@@ -137,7 +137,7 @@
 
         <div class="slider__slides">
           <div class="slider__item slider__item--start">
-            <img class="slider__image" src="img/before-mobile@1x.png" width="311" height="232" alt="Фото кота Бориса до начала программы">
+            <img class="slider__image" src="img/cats.png" width="636" height="517" alt="Фото кота Бориса до начала программы">
           </div>
           <div class="slider__item slider__item--finish visually-hidden">
 
@@ -146,7 +146,7 @@
         </div>
 
         <div class="slider__block">
-          <p class="slider__text">Было</p>
+          <p class="slider__text slider__text--before">Было</p>
           <div class="slider__control">
 
             <label class="slider__button slider__button--start" for="toggle-start"></label>
@@ -161,12 +161,15 @@
 
     <section class="contact">
       <h2 class="visually-hidden">Наши контакты</h2>
+      <div class="contact__info--wrapper  container">
 
-      <div class="contact__info">
-        <p class="contact__tagline">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contact__address">ул. Большая Конюшенная, д. 19/8
-          <span class="contact__town">Санкт-Петербург</span>
-        </p>
+        <div class="contact__info">
+          <p class="contact__tagline">Приглашаем
+            <br> к сотрудничеству дилеров!</p>
+          <p class="contact__address">ул. Большая Конюшенная, д. 19/8
+            <span class="contact__town">Санкт-Петербург</span>
+          </p>
+        </div>
       </div>
 
       <div class="contact__map">
@@ -175,40 +178,47 @@
     </section>
   </main>
 
-  <footer class="page-footer container">
+  <footer class="page-footer page-footer--color ">
 
-    <div class="page-footer__logo footer-logo">
-      <a class="footer-logo__link">
-        <img class="footer-logo__title" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
-      </a>
-    </div>
-
-    <ul class="page-footer__social social-list">
-
-      <li class="social-list__item social">
-        <a class="social__link" href="#">
-          <span class="visually-hidden0">VK.com</span>
+    <div class="page-footer__wrapper container">
+      <div class="page-footer__logo footer-logo">
+        <a class="footer-logo__link">
+          <img class="footer-logo__title" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
         </a>
-      </li>
+      </div>
 
-      <li class="social-list__item social">
-        <a class="social__link" href="#">
-          <span class="visually-hidden0">Instagram</span>
+      <ul class="page-footer__social social-list">
+
+        <li class="social-list__item social-list__item--vk social">
+
+
+          <a class="social__link social__link--vk" href="#">
+
+            <span class="visually-hidden">VK.com</span>
+          </a>
+        </li>
+
+        <li class="social-list__item social">
+          <a class="social__link social__link--insta" href="#">
+
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+
+        <li class="social-list__item social">
+          <a class="social__link social__link--fb" href="#">
+
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="page-footer__academy academy">
+        <p class="academy__title">HTML Academy</p>
+        <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="academy__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
         </a>
-      </li>
-
-      <li class="social-list__item social">
-        <a class="social__link" href="#">
-          <span class="visually-hidden0">Facebook</span>
-        </a>
-      </li>
-    </ul>
-
-    <div class="page-footer__academy academy">
-      <p class="academy__title">HTML Academy</p>
-      <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="academy__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
-      </a>
+      </div>
     </div>
   </footer>
 

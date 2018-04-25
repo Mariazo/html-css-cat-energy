@@ -47,7 +47,7 @@
 
       <form class="program" action="https://echo.htmlacademy.ru" method="get">
 
-        <div class="program__field program__field--info data">
+        <div class="program__field program__field--info">
           <ul class="program__cat data-list">
             <li class="data-list__item">
               <label class="data-list__label" for="data-name">Имя:*</label>
@@ -65,7 +65,7 @@
         </div>
 
 
-        <div class="program__field program__field--category select">
+        <div class="program__field program__field--category">
           <ul class="program__select select-list">
             <li class="select-list__item">
               <input class="select-list__input select-list__input--downweight" type="radio" name="downweight" id="data-downweight" checked>
@@ -84,7 +84,8 @@
 
 
         <div class="program__field program__field--contact">
-          <h2 class="program__field-title">Контактные данные (владельца кота)</h2>
+          <h2 class="program__field-title program__field-title--contact">Контактные данные (владельца кота)</h2>
+
           <ul class="program__cat-owner data-list data-list--owner">
             <li class="data-list__item data-list__item--owner">
               <label class="data-list__label" for="data-email">E-mail:*</label>
@@ -101,7 +102,8 @@
 
 
         <div class="program__field program__field--comment">
-          <h2 class="program__field-title">Комментарий</h2>
+          <h2 class="program__field-title program__field-title--comment">Комментарий</h2>
+
           <div class="program__message message">
             <label class="visually-hidden" for="data-message">Введите комментарий:</label>
             <textarea class="message__text" name="message" placeholder="Расскажите обо всех повадках кота" cols="30" rows="4" id="data-message"></textarea>
@@ -109,8 +111,9 @@
         </div>
 
 
-        <div class="program__field program__field--additional option">
-          <h2 class="program__field-title option__title">Дополнительно</h2>
+        <div class="program__field program__field--additional">
+          <h2 class="program__field-title program__field-title--additional">Дополнительно</h2>
+
           <ul class="program__option option-list">
             <li class="option-list__item">
               <input class="option-list__input option-list__input--sugar" type="checkbox" name="sugar" id="data-sugar" checked>
@@ -137,16 +140,18 @@
           <p class="program__warning">* — Обязательные поля</p>
         </div>
 
-        </data>
     </div>
     <section class="contact">
       <h2 class="visually-hidden">Наши контакты</h2>
+      <div class="contact__info--wrapper contact__info--color container">
 
-      <div class="contact__info contact__info--color">
-        <p class="contact__tagline">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contact__address">ул. Большая Конюшенная, д. 19/8
-          <span class="contact__town">Санкт-Петербург</span>
-        </p>
+        <div class="contact__info">
+          <p class="contact__tagline">Приглашаем
+            <br> к сотрудничеству дилеров!</p>
+          <p class="contact__address">ул. Большая Конюшенная, д. 19/8
+            <span class="contact__town">Санкт-Петербург</span>
+          </p>
+        </div>
       </div>
 
       <div class="contact__map">
@@ -157,42 +162,48 @@
   </main>
 
 
-  <footer class="page-footer page-footer--color container">
+  <footer class="page-footer page-footer--color ">
 
-    <div class="page-footer__logo footer-logo">
-      <a class="footer-logo__link">
-        <img class="footer-logo__title" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
-      </a>
+    <div class="page-footer__wrapper container">
+      <div class="page-footer__logo footer-logo">
+        <a class="footer-logo__link" href="index.html">
+          <img class="footer-logo__title" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
+        </a>
+      </div>
+
+      <ul class="page-footer__social social-list">
+
+        <li class="social-list__item social-list__item--vk social">
+
+
+          <a class="social__link social__link--vk" href="#">
+
+            <span class="visually-hidden">VK.com</span>
+          </a>
+        </li>
+
+        <li class="social-list__item social">
+          <a class="social__link social__link--insta" href="#">
+
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+
+        <li class="social-list__item social">
+          <a class="social__link social__link--fb" href="#">
+
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="page-footer__academy academy">
+        <p class="academy__title">HTML Academy</p>
+        <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="academy__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
+      </div>
     </div>
-
-    <ul class="page-footer__social social-list">
-
-      <li class="social-list__item social">
-        <a class="social__link" href="#">
-          <span class="visually-hidden0">VK.com</span>
-        </a>
-      </li>
-
-      <li class="social-list__item social">
-        <a class="social__link" href="#">
-          <span class="visually-hidden0">Instagram</span>
-        </a>
-      </li>
-
-      <li class="social-list__item social">
-        <a class="social__link" href="#">
-          <span class="visually-hidden0">Facebook</span>
-        </a>
-      </li>
-    </ul>
-
-    <div class="page-footer__academy academy">
-      <p class="academy__title">HTML Academy</p>
-      <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="academy__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
-      </a>
-    </div>
-
   </footer>
   <script src="js/script.js"></script>
 

@@ -61,15 +61,16 @@
 
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
-    padding-top: 54px;
+    padding-top: 49px;
   }
 
   .page-header--background {
     &::after {
       display: block;
       top: 0;
-      width: 47%;
-      min-height: 688px;
+      right: 1px;
+      width: 50%;
+      min-height: 694px;
       background-size: cover;
     }
   }

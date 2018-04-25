@@ -4,7 +4,8 @@
 
 .goods__title {
   margin: 0;
-  padding: 15px 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
   color: $black-light;
   font-family: $default-font;
   font-size: 16px;
@@ -33,18 +34,19 @@
   font-weight: 400;
   line-height: 14px;
   text-align: right;
+  text-transform: uppercase;
 }
 
 .goods__line {
   min-width: 280px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .goods__button {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 
 @media (min-width: $tablet-width) {
@@ -53,6 +55,10 @@
     justify-content: space-between;
     align-items: baseline;
     flex-wrap: wrap;
+
+
+
+
     padding-right: 38px;
     padding-left: 38px;
     border: 1px solid $gray-light;
@@ -60,20 +66,47 @@
   }
 
   .goods__title {
+    width: 300px;
+    margin-top: 10px;
     font-size: 20px;
     line-height: 20px;
+
+
   }
+
+  .goods__specification {
+    width: 300px;
+
+
+  }
+
+  .goods__line {
+    justify-content: flex-end;
+      margin-bottom: 0;
+  }
+
+
+
 
   .goods__value,
   .goods__price {
+    padding: 12px 0;
+    width: 90px;
     font-size: 16px;
     line-height: 20px;
+
+
+  }
+
+  .goods__value {
+    width: auto;
+    text-align: right;
   }
 
   .goods__button {
     width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 11px;
+    margin-bottom: 27px;
     font-size: 16px;
     line-height: 20px;
   }
@@ -83,19 +116,51 @@
   .goods {
     padding-right: 0;
     padding-left: 0;
+    padding-top: 13px;
+    padding-bottom: 14px;
+
+
     border: none;
     border-bottom: 1px solid $gray-light;
   }
 
   .goods__title {
     width: 160px;
+     margin-top: 0;
+     padding-top: 10px;
+     padding-bottom: 10px;
+
+
+
   }
 
   .goods__specification {
-    width: 285px;
+    width: 415px;
   }
+
+   .goods__price {
+     padding: 10px 0;
+
+     width: 140px;
+
+   }
+
+    .goods__value {
+      padding: 10px 0;
+
+      width: 147px;
+      text-align: left;
+    }
+
+
 
   .goods__button {
     width: 245px;
+    margin-top: 0;
+
+    margin-bottom: 0;
+
+
+
   }
 }
