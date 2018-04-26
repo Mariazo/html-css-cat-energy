@@ -7,8 +7,6 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
-
-
   list-style: none;
 
   border-top: 1px solid $gray-lighter;
@@ -18,11 +16,7 @@
 .social-list__item {
   width: 55px;
   text-align: center;
- }
-
-
-
-
+}
 
 .social__link::before {
   content: "";
@@ -51,59 +45,41 @@
   background: url("../img/icon-fb-mobile.svg") no-repeat;
 }
 
-
-
-
-
 @media (min-width: $tablet-width) {
   .social-list {
     width: 162px;
     padding-top: 3px;
     padding-bottom: 3px;
 
-
-
     border: none;
   }
 
   .social-list__item {
     width: 46px;
-
-
   }
 
   .social-list__item--vk {
     text-align: left;
   }
 
-
-
   .social__link--vk::before {
     width: 30px;
     height: 16px;
-
   }
 
   .social__link--insta::before {
     width: 23px;
     height: 23px;
-
   }
 
   .social__link--fb::before {
     width: 14px;
     height: 28px;
-
   }
-
-
 }
 
 @media (min-width: $desktop-width) {
   .social-list {
     width: 570px;
-
   }
-
-
 }

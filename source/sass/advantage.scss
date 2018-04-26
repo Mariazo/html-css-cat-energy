@@ -118,10 +118,7 @@
   .advantage__item {
     width: 324px;
     margin-bottom: 130px;
-
     counter-increment: section;
-
-
 
     &::before {
       width: 80px;
@@ -167,9 +164,7 @@
   .advantage__item {
     width: 245px;
     margin-bottom: 54px;
-  }
 
-  .advantage__item {
     &::before {
       content: "";
       position: absolute;

@@ -3,17 +3,16 @@
   width: 280px;
   padding-top: 10px;
   padding-bottom: 10px;
-  text-align: center;
-  font-family: $default-font;
+
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 400;
+  font-family: $default-font;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+
   border: none;
-
-
-
 }
 
 /*
@@ -27,30 +26,29 @@
 */
 
 .button--green {
-  background-color: $green;
   color: $white;
+  background-color: $green;
+
   &:hover {
-    cursor: pointer;
     background-color: #5eaa2f;
+    cursor: pointer;
   }
+
   &:active {
-    color: rgba(255,255,255, 0.3)
+    color: rgba(255, 255, 255, 0.3);
   }
-
-
-
 }
 
 .button--gray {
-  background-color: $gray-light;
   color: $gray;
-  &:hover {
-    cursor: pointer;
-    background-color: $gray-lighter;
-    }
+  background-color: $gray-light;
 
-  &:active {
-    color: rgba(0, 0, 0, 0.3)
+  &:hover {
+    background-color: $gray-lighter;
+    cursor: pointer;
   }
 
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }

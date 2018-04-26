@@ -16,12 +16,12 @@
 }
 
 .promo__offer {
-    position: relative;
+  position: relative;
 
   margin: 0;
-  padding: 0;
   margin-right: 58px;
   margin-left: 58px;
+  padding: 0;
   padding-top: 187px;
   padding-bottom: 42px;
 
@@ -30,20 +30,22 @@
   line-height: 20px;
   font-family: $second-font;
   color: $white;
-   &::before {
-     content: "";
-     position: absolute;
-     top: 65px;
-     left: 56px;
-     display: block;
-     width: 55px;
-     height: 60px;
-     background-repeat: no-repeat;
-     background-position: center center;
-     background-size: cover;
-     background-image: url("../img/icon-gift.svg");
-   }
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 56px;
+
+    display: block;
+    width: 55px;
+    height: 60px;
+
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -56,19 +58,15 @@
   }
 
   .promo__offer {
-
-
     width: 160px;
     margin-left: 424px;
     padding-top: 72px;
     padding-bottom: 68px;
-      &::before {
 
-        top: 65px;
-        left: -332px;
-     
-      }
-
+    &::before {
+      top: 65px;
+      left: -332px;
+    }
   }
 }
 
@@ -83,21 +81,20 @@
   }
 
   .promo__offer {
-
+    width: 161px;
     margin: 0 43px;
     padding-top: 187px;
     padding-bottom: 40px;
-    width: 161px;
-
 
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     font-family: $second-font;
     color: $white;
+
     &::before {
-       top: 65px;
-       left: 52px;
-         }
+      top: 65px;
+      left: 52px;
+    }
   }
 }

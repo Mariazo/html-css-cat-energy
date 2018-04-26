@@ -1,8 +1,8 @@
 .data-list {
   margin: 0;
   margin-bottom: 22px;
-
   padding: 0;
+
   list-style: none;
 }
 
@@ -13,11 +13,11 @@
 }
 
 .data-list__label {
-  color: $black-light;
-  font-family: $default-font;
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 18px;
+  font-family: $default-font;
+  color: $black-light;
   text-transform: uppercase;
 }
 
@@ -27,11 +27,12 @@
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 14px;
-  color: $gray;
-  font-family: $default-font;
-  font-size: 16px;
+
   font-weight: 400;
+  font-size: 16px;
   line-height: 17px;
+  font-family: $default-font;
+  color: $gray;
   text-transform: uppercase;
 }
 
@@ -54,7 +55,6 @@
 
   .data-list__input {
     margin-left: 20px;
-
     padding-top: 9px;
     padding-bottom: 9px;
 
@@ -64,23 +64,19 @@
 
   .data-list__input--email {
     padding-left: 19px;
-
-
   }
 
   .data-list__input--phone {
     margin-left: 15px;
     padding-left: 17px;
-
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .data-list--owner {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 70px;
   }
 

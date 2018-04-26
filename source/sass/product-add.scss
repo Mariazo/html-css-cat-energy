@@ -1,18 +1,18 @@
 .product-add__title {
-  color: $black-light;
-  font-family: $default-font;
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 20px;
+  font-family: $default-font;
+  color: $black-light;
   text-transform: uppercase;
 }
 
 .product-add__tagline {
-  color: $gray;
-  font-family: $second-font;
-  font-size: 12px;
   font-weight: 400;
+  font-size: 12px;
   line-height: 16px;
+  font-family: $second-font;
+  color: $gray;
 }
 
 /*

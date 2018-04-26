@@ -34,21 +34,17 @@
     font-size: 36px;
     line-height: 36px;
 
-
-
     &::before {
       content: "";
-
       display: inline-block;
       width: 100%;
       height: 3px;
       margin-right: 40px;
       margin-left: -100%;
-
       vertical-align: middle;
-
       background-color: #68b738;
     }
+
     &::after {
       content: "";
 
@@ -57,15 +53,10 @@
       height: 3px;
       margin-right: -100%;
       margin-left: 40px;
-
       vertical-align: middle;
-
       background-color: #68b738;
     }
   }
-
-
-
 
   .additional__promo {
     margin-top: 69px;
@@ -76,8 +67,6 @@
   .additional {
     margin-bottom: 47px;
   }
-
-
 
   .additional__wrapper {
     display: flex;
@@ -92,7 +81,6 @@
     font-size: 36px;
     line-height: 38px;
   }
-
 
   .additional__list {
     width: 895px;

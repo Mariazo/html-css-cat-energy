@@ -6,7 +6,6 @@
   margin: 0;
   margin-bottom: 35px;
   padding: 0;
-
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -18,8 +17,9 @@
   margin-bottom: 25px;
 }
 
-
 .program__warning {
+  margin: 0;
+  padding: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -34,7 +34,6 @@
 
 .program__field--category {
   margin-bottom: 28px;
-
   border-bottom: 1px solid $gray-light;
 }
 
@@ -60,10 +59,6 @@
   margin-bottom: 21px;
 }
 
-.program__warning {
-  margin: 0;
-  padding: 0;
-}
 
 @media (min-width: $tablet-width) {
   .program {
@@ -74,56 +69,35 @@
   .program__field-title {
     margin-right: -40px;
     margin-left: -40px;
-
     font-size: 36px;
     line-height: 36px;
 
-
-
-
-
-
-
     &::before {
       content: "";
-
       display: inline-block;
       width: 100%;
       height: 3px;
       margin-right: 40px;
       margin-left: -100%;
-
       vertical-align: middle;
-
       background-color: #68b738;
     }
+
     &::after {
       content: "";
-
       display: inline-block;
       width: 100%;
       height: 3px;
       margin-right: -100%;
       margin-left: 40px;
-
       vertical-align: middle;
-
       background-color: #68b738;
     }
   }
 
-
-
-
-
-
-
-
-
   .program__field-title--contact {
     margin-bottom: 75px;
   }
-
 
   .program__field-title--comment {
     margin-bottom: 75px;
@@ -133,18 +107,13 @@
     margin-bottom: 42px;
   }
 
-
-
-
   .program__field--info {
     margin-bottom: 72px;
-
     border-bottom: none;
   }
 
   .program__field--category {
     margin-bottom: 108px;
-
     border: 1px solid $gray-light;
     border-bottom: none;
   }
@@ -152,8 +121,6 @@
   .program__field--contact {
     margin-bottom: 67px;
   }
-
-
 
   .program__field--comment {
     margin-bottom: 63px;
@@ -174,7 +141,6 @@
     margin-left: 60px;
     padding-top: 17px;
     padding-bottom: 19px;
-
     font-size: 16px;
     line-height: 16px;
     text-align: left;
@@ -185,7 +151,6 @@
     margin-bottom: 0;
     padding-top: 16px;
     padding-bottom: 16px;
-
     font-size: 20px;
     line-height: 20px;
   }
@@ -227,11 +192,9 @@
     margin-bottom: 45px;
   }
 
-
   .program__send {
     margin-bottom: 52px;
   }
-
 
   .program__button {
     width: 570px;

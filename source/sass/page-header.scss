@@ -13,14 +13,11 @@
 
     background-color: $green;
     background-image: url("../img/index-background-mobile@1x.png");
-
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
   }
 }
-
-
 
 .page-header__wrapper {
   display: flex;
@@ -59,13 +56,11 @@
     &::after {
       top: 0;
       right: 1px;
-
       display: block;
       width: 50%;
       min-height: 696px;
+
       background-image: url("../img/index-background-desktop.png");
-
-
     }
   }
 }

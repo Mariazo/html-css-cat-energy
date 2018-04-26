@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   padding-top: 26px;
+
   list-style: none;
 }
 
@@ -11,15 +12,14 @@
 
 .select-list__label {
   margin-left: 30px;
-  color: $black-light;
-  font-family: $default-font;
-  font-size: 16px;
+
   font-weight: 400;
+  font-size: 16px;
   line-height: 18px;
+  font-family: $default-font;
+  color: $black-light;
   text-transform: uppercase;
 }
-
-
 
 @media (min-width: $tablet-width) {
   .select-list {
@@ -30,9 +30,7 @@
     margin-bottom: 32px;
   }
 
-
   .select-list__label {
-
     margin-left: 20px;
 
     font-size: 20px;
@@ -40,10 +38,10 @@
   }
 
   .select-list__input {
+    margin-right: 20px;
+    margin-left: 30px;
 
     font-size: 20px;
-    margin-left: 30px;
-    margin-right: 20px;
     line-height: 20px;
   }
 }
