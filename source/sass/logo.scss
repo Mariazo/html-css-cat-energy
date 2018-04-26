@@ -1,0 +1,51 @@
+.logo--header {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+}
+
+
+.logo__link {
+    &[href]:hover {
+    opacity: 0.8;
+  }
+  &[href]:active {
+    opacity: 0.6;
+  }
+}
+
+
+.logo__link--header {
+  margin-top: 11px;
+  margin-bottom: 13px;
+  &[href]:hover {
+    opacity: 0.8;
+  }
+  &[href]:active {
+    opacity: 0.6;
+  }
+}
+
+.logo--footer {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .logo--footer {
+    width: 162px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo--footer {
+    width: 245px;
+  }
+}
+

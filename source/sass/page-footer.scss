@@ -4,6 +4,18 @@
 }
 
 
+.footer-logo__link {
+
+  margin-top: 11px;
+  margin-bottom: 13px;
+  &[href]:hover {
+    opacity: 0.8;
+  }
+  &[href]:active {
+    opacity: 0.6;
+  }
+
+}
 
 @media (min-width: $tablet-width) {
 

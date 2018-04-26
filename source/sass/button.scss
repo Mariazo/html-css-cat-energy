@@ -11,6 +11,9 @@
   text-transform: uppercase;
   text-decoration: none;
   border: none;
+
+
+
 }
 
 /*
@@ -26,9 +29,28 @@
 .button--green {
   background-color: $green;
   color: $white;
+  &:hover {
+    cursor: pointer;
+    background-color: #5eaa2f;
+  }
+  &:active {
+    color: rgba(255,255,255, 0.3)
+  }
+
+
+
 }
 
 .button--gray {
   background-color: $gray-light;
   color: $gray;
+  &:hover {
+    cursor: pointer;
+    background-color: $gray-lighter;
+    }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3)
+  }
+
 }
