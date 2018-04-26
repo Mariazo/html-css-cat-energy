@@ -245,14 +245,13 @@
   }
 
   .category__title {
+    margin-bottom: 74px;
+    padding-top: 76px;
+    padding-left: 189px;
+
     &::before {
       top: 46px;
       left: 27px;
-      margin-bottom: 74px;
-      padding-top: 76px;
-      padding-left: 189px;
-
-
       width: 100px;
       height: 100px;
     }
