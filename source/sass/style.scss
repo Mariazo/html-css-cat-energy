@@ -1,3 +1,4 @@
+@import "normalize";
 @import "fonts";
 @import "variables";
 @import "global-styles";
@@ -10,10 +11,9 @@
 @import "category";
 @import "contact";
 @import "example";
-@import "footer-logo";
-@import "form-list";
+@import "data-list";
 @import "goods";
-@import "header-logo";
+@import "logo";
 @import "main-nav";
 @import "message";
 @import "method";
@@ -29,4 +29,3 @@
 @import "site-list";
 @import "slider";
 @import "social-list";
-@import "social";

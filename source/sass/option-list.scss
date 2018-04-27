@@ -1,18 +1,55 @@
 .option-list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 .option-list__item {
-  padding: 15px 0;
+  padding-top: 13px;
+  padding-bottom: 12px;
 }
 
 .option-list__label {
-  color: $black-light;
-  font-family: $default-font;
-  font-size: 16px;
+  padding-left: 30px;
+
   font-weight: 400;
+  font-size: 16px;
   line-height: 18px;
+  font-family: $default-font;
+  color: $black-light;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .option-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .option-list__item {
+    width: 45%;
+    padding: 25px 0;
+  }
+
+  .option-list__input {
+    margin-right: 20px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .option-list__label {
+    padding-left: 22px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .option-list__item {
+    width: 20%;
+  }
 }

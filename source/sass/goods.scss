@@ -1,24 +1,148 @@
+.goods {
+  border-bottom: 1px solid $gray-lighter;
+}
+
 .goods__title {
-  color: $black-light;
-  font-family: $default-font;
-  font-size: 16px;
+  margin: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
+
   font-weight: 400;
+  font-size: 16px;
   line-height: 16px;
+  font-family: $default-font;
+  color: $black-light;
   text-transform: uppercase;
 }
 
+.goods__specification {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
 .goods__value {
-  color: $gray;
-  font-family: $second-font;
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
   line-height: 14px;
+  font-family: $second-font;
+  color: $gray;
 }
 
 .goods__price {
-  color: $gray;
-  font-family: $second-font;
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
   line-height: 14px;
+  font-family: $second-font;
+  text-align: right;
+  color: $gray;
+  text-transform: uppercase;
+}
+
+.goods__line {
+  display: flex;
+  justify-content: space-between;
+  min-width: 280px;
+  margin-bottom: 13px;
+}
+
+.goods__button {
+  width: 100%;
+  margin-bottom: 17px;
+}
+
+@media (min-width: $tablet-width) {
+  .goods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-right: 38px;
+    padding-left: 38px;
+
+    border: 1px solid $gray-light;
+    border-top: 1px solid transparent;
+  }
+
+  .goods__title {
+    width: 300px;
+    margin-top: 10px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .goods__specification {
+    width: 300px;
+  }
+
+  .goods__line {
+    justify-content: flex-end;
+    margin-bottom: 0;
+  }
+
+  .goods__value,
+  .goods__price {
+    width: 90px;
+    padding: 12px 0;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .goods__value {
+    width: auto;
+
+    text-align: right;
+  }
+
+  .goods__button {
+    width: 100%;
+    margin-top: 11px;
+    margin-bottom: 27px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods {
+    padding-top: 13px;
+    padding-right: 0;
+    padding-bottom: 14px;
+    padding-left: 0;
+
+    border: none;
+    border-bottom: 1px solid $gray-light;
+  }
+
+  .goods__title {
+    width: 160px;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .goods__specification {
+    width: 415px;
+  }
+
+  .goods__price {
+    width: 140px;
+    padding: 10px 0;
+  }
+
+  .goods__value {
+    width: 147px;
+    padding: 10px 0;
+
+    text-align: left;
+  }
+
+  .goods__button {
+    width: 245px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
