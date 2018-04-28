@@ -1,10 +1,3 @@
-.logo--header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 65px;
-}
-
 .logo__link {
   &[href]:hover {
     opacity: 0.8;
@@ -44,6 +37,12 @@
 
     text-align: left;
   }
+  /*
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("img/bg-header@2x.jpg");
+    background-size: 1338px auto;
+}
+*/
 }
 
 @media (min-width: $desktop-width) {

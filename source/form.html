@@ -16,15 +16,19 @@
 
       <div class="page-header__wrapper-top">
         <div class="page-header__logo logo logo--header">
-          <a class="logo__link logo__link--header" href="index.html">
-            <img class="logo__image logo__image--header" src="img/logo.png" width="202" height="59" alt="Логотип Cat Energy">
+          <a class="logo__link logo__link--header">
+            <!-- <img class="logo__image logo__image--header" src="img/logo.png" width="202" height="59" alt="Логотип Cat Energy"> -->
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo.png">
+              <source media="(min-width: 768px)" srcset="img/logo.png">
+              <img src="img/logo-mobile.svg" width="191" height="41" alt="Логотип Cat Energy">
+            </picture>
           </a>
         </div>
         <button class="page-header__toggle burger-button" type="button" onclick="openMenu()">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-
       <nav class="page-header__nav" id="mobile-menu">
         <ul class="page-header__list site-list">
           <li class="site-list__item">
