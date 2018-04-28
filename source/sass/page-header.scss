@@ -12,7 +12,8 @@
     min-height: 305px;
 
     background-color: $green;
-    background-image: url("../img/index-background-mobile@1x.png");
+    background-image: url("../img/index-background-mobile@1x.jpg");
+
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -23,6 +24,26 @@
   display: flex;
   flex-direction: column;
 }
+
+.page-header__wrapper-top {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+}
+
+
+.page-header__nav {
+  display: none;
+}
+
+.page-header__nav--open {
+  display: block;
+}
+
+
+
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
@@ -39,6 +60,11 @@
   .page-header__toggle {
     display: none;
   }
+
+  .page-header__nav {
+    display: block;
+  }
+
 
   .page-header__list {
     display: flex;
