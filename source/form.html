@@ -7,6 +7,40 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Cat Form</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* По умолчанию мобильный макет */
+      background-image: url("img/cat-glass/cat-energy-form-mobile.png");
+    }
+  
+    /* Планшет */
+  
+    @media ( min-width: 768px) {
+      HTML {
+        /* Планшетный макет */
+        background-image: url("img/cat-glass/cat-energy-form-tablet.png");
+      }
+    }
+  
+    /* Десктоп */
+  
+    @media ( min-width: 1300px) {
+      HTML {
+        /* Десктопный макет */
+        background-image: url("img/cat-glass/cat-energy-form-desktop.png");
+      }
+    }
+  
+    BODY {
+      opacity: .5;
+    }
+  </style>
+  <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+  <script src="../node_modules/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
 </head>
 
 <body>
