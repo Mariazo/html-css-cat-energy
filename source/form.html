@@ -17,14 +17,18 @@
       <div class="page-header__wrapper-top">
         <div class="page-header__logo logo logo--header">
           <a class="logo__link logo__link--header" href="index.html">
-            <img class="logo__image logo__image--header" src="img/logo.png" width="202" height="59" alt="Логотип Cat Energy">
+            <!-- <img class="logo__image logo__image--header" src="img/logo.png" width="202" height="59" alt="Логотип Cat Energy"> -->
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo.png">
+              <source media="(min-width: 768px)" srcset="img/logo.png">
+              <img src="img/logo-mobile.svg" width="191" height="41" alt="Логотип Cat Energy">
+            </picture>
           </a>
         </div>
         <button class="page-header__toggle burger-button" type="button" onclick="openMenu()">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-
       <nav class="page-header__nav" id="mobile-menu">
         <ul class="page-header__list site-list">
           <li class="site-list__item">
@@ -45,7 +49,7 @@
   <main class="page-main">
     <div class="container">
       <h1 class="page-main__title">Подбор программы</h1>
-      <p class="page-main__tagline">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <p class="page-main__tagline">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
 
       <form class="program" action="https://echo.htmlacademy.ru" method="get">
 
@@ -70,16 +74,16 @@
         <div class="program__field program__field--category">
           <ul class="program__select select-list">
             <li class="select-list__item">
-              <input class="select-list__input select-list__input--downweight" type="radio" name="downweight" id="data-downweight" checked>
-              <label class="select-list__label" for="option-downweight">Похудение</label>
+              <input class="select-list__input select-list__input--downweight visually-hidden" type="radio" name="category" value="downweight" id="data-downweight" checked>
+              <label class="select-list__label" for="data-downweight">Похудение</label>
             </li>
             <li class="select-list__item">
-              <input class="select-list__input select-list__input--upweight" type="radio" name="upweight" id="data-upweight">
-              <label class="select-list__label" for="option-downweight">Набор массы</label>
+              <input class="select-list__input select-list__input--upweight visually-hidden" type="radio" name="category" value="upweight" id="data-upweight">
+              <label class="select-list__label" for="data-upweight">Набор массы</label>
             </li>
             <li class="select-list__item">
-              <input class="select-list__input select-list__input--help" type="radio" name="help" id="data-help">
-              <label class="select-list__label" for="option-downweight">Не знаю (нужен ваш совет)</label>
+              <input class="select-list__input select-list__input--help visually-hidden" type="radio" name="category" value="help" id="data-help">
+              <label class="select-list__label" for="data-help">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
         </div>
@@ -118,19 +122,19 @@
 
           <ul class="program__option option-list">
             <li class="option-list__item">
-              <input class="option-list__input option-list__input--sugar" type="checkbox" name="sugar" id="data-sugar" checked>
+              <input class="option-list__input option-list__input--sugar visually-hidden" type="checkbox" name="sugar" id="data-sugar" checked>
               <label class="option-list__label" for="data-sugar">Сахарозаменитель</label>
             </li>
             <li class="option-list__item">
-              <input class="option-list__input option-list__input--water" type="checkbox" name="water" id="data-water">
+              <input class="option-list__input option-list__input--water visually-hidden" type="checkbox" name="water" id="data-water">
               <label class="option-list__label" for="data-water">Питьевая вода</label>
             </li>
             <li class="option-list__item">
-              <input class="option-list__input option-list__input--milk" type="checkbox" name="milk" id="data-milk">
+              <input class="option-list__input option-list__input--milk visually-hidden" type="checkbox" name="milk" id="data-milk">
               <label class="option-list__label" for="data-milk">Молоко</label>
             </li>
             <li class="option-list__item">
-              <input class="option-list__input option-list__input--vitamin" type="checkbox" name="vitamin" id="data-vitamin">
+              <input class="option-list__input option-list__input--vitamin visually-hidden" type="checkbox" name="vitamin" id="data-vitamin">
               <label class="option-list__label" for="data-vitamin">Витамины</label>
             </li>
           </ul>

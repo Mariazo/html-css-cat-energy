@@ -1,6 +1,5 @@
 .example {
   padding: 0 20px;
-
   background-color: $gray-light;
 }
 
@@ -13,7 +12,6 @@
   margin-top: 40px;
   margin-bottom: 25px;
   padding: 0;
-
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
@@ -25,7 +23,6 @@
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -38,16 +35,13 @@
   justify-content: space-between;
   margin: 0;
   padding: 0;
-
   list-style: none;
   text-align: center;
 }
 
 .example__item {
   position: relative;
-
   margin-bottom: 37px;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -61,14 +55,12 @@
   padding: 0;
   padding-top: 12px;
   padding-bottom: 15px;
-
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   font-family: $default-font;
   color: $black-light;
   text-transform: uppercase;
-
   border: 1px solid silver;
   border-radius: 3px;
 }
@@ -78,25 +70,21 @@
   top: 47px;
   left: 18px;
   z-index: 2;
-
   max-width: 87px;
   margin: 0;
   padding: 0;
   padding-right: 5px;
   padding-left: 5px;
-
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   font-family: $second-font;
-
   background-color: $gray-light;
 }
 
 .example__cost {
   margin: 0;
   padding: 0;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -109,18 +97,15 @@
 @media (min-width: $tablet-width) {
   .example {
     padding: 0 30px;
-
     background-color: $white;
-    background-image: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
-    /*background-image: linear-gradient(to bottom, #ffffff 591px, #e5e5e5 591px);*/
+    background-image: linear-gradient(to bottom, white 593px, transparent 593px),
+      linear-gradient(to right, $gray-light 50%, $gray-lighter 50%);
   }
-
 
   .example__title {
     margin-top: 0;
     margin-bottom: 65px;
     padding-top: 15px;
-
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
@@ -129,7 +114,6 @@
   .example__description {
     max-width: 680px;
     margin-bottom: 54px;
-
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -149,7 +133,6 @@
 
   .example__value {
     width: 162px;
-
     font-weight: 400;
     font-size: 30px;
     line-height: 40px;
@@ -158,13 +141,10 @@
   .example__text {
     top: 63px;
     left: 13px;
-
     max-width: 165px;
-
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
-
     background-color: $white;
   }
 
@@ -175,7 +155,6 @@
   .example__cost {
     max-width: 175px;
     padding-top: 5px;
-
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -188,10 +167,9 @@
     display: flex;
     justify-content: center;
     padding: 0 40px;
-
     background-color: $white;
-    /*background-image: linear-gradient(to bottom, #ffffff 591px, #e5e5e5 591px);*/
-    background-image: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    background-image: linear-gradient(to bottom, white 205px, transparent 205px),
+      linear-gradient(to right, $gray-light 975px, $gray-lighter 975px);
   }
 
   .example__text-block {
@@ -200,6 +178,8 @@
 
   .example__slider {
     width: 670px;
+    background-image: linear-gradient(to bottom, white 205px, transparent 205px),
+      linear-gradient(to right, $gray-light 385px, $gray-lighter 385px);
   }
 
   .example__title {
@@ -217,7 +197,6 @@
     justify-content: center;
   }
 
-
   .example__text {
     background-color: $gray-light;
   }
@@ -225,7 +204,6 @@
   .example__cost {
     min-width: 328px;
     margin-left: 0;
-
     text-align: left;
   }
 

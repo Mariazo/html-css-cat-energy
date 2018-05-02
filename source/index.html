@@ -16,18 +16,22 @@
     <div class="page-header__wrapper container">
 
 
-    <div class="page-header__wrapper-top">
-      <div class="page-header__logo logo logo--header">
-        <a class="logo__link logo__link--header">
-          <img class="logo__image logo__image--header" src="img/logo.png" width="202" height="59" alt="Логотип Cat Energy">
-        </a>
-      </div>
-        <button class="page-header__toggle burger-button" type="button" onclick="openMenu()">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </div>
+<div class="page-header__wrapper-top">
+  <div class="page-header__logo logo logo--header">
+    <a class="logo__link logo__link--header">
+      <!-- <img class="logo__image logo__image--header" src="img/logo.png" width="202" height="59" alt="Логотип Cat Energy"> -->
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo.png">
+        <source media="(min-width: 768px)" srcset="img/logo.png">
+        <img src="img/logo-mobile.svg" width="191" height="41" alt="Логотип Cat Energy">
+      </picture>
 
-
+    </a>
+  </div>
+  <button class="page-header__toggle burger-button" type="button" onclick="openMenu()">
+    <span class="visually-hidden">Открыть меню</span>
+  </button>
+</div>
       <nav class="page-header__nav" id="mobile-menu">
         <ul class="page-header__list site-list">
           <li class="site-list__item site-list__item--white site-list__item--active">
@@ -40,12 +44,8 @@
             <a class="site-list__link site-list__link--white" href="form.html">Подбор программы</a>
           </li>
         </ul>
-
       </nav>
     </div>
-
-
-
   </header>
 
   <main class="page-main">
@@ -136,8 +136,8 @@
 
       <div class="example__slider slider">
 
-        <input class="slider__toggle slider__toggle--start" name="toggle" type="radio" id="toggle-start" checked>
-        <input class="slider__toggle slider__toggle--finish" name="toggle" type="radio" id="toggle-finish">
+        <input class="slider__toggle slider__toggle--start visually-hidden" name="toggle" type="radio" id="toggle-start" checked>
+        <input class="slider__toggle slider__toggle--finish visually-hidden" name="toggle" type="radio" id="toggle-finish">
 
         <div class="slider__slides">
           <div class="slider__item slider__item--start">
