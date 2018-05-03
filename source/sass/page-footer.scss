@@ -3,38 +3,21 @@
   background-color: $gray-light;
 }
 
-
-.footer-logo__link {
-  margin-top: 11px;
-  margin-bottom: 13px;
-
-  &[href]:hover {
-    opacity: 0.8;
-  }
-
-  &[href]:active {
-    opacity: 0.6;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 45px;
+    padding-top: 49px;
     padding-bottom: 60px;
   }
 
-  .footer-logo__link {
-    margin: 0;
-    padding: 0;
-  }
+
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    padding-top: 48px;
+    padding-top: 52px;
     padding-bottom: 62px;
   }
 }

@@ -2,21 +2,19 @@
   display: flex;
   justify-content: space-between;
   padding: 0;
-  padding-top: 30px;
-  padding-bottom: 24px;
+  padding-top: 29px;
+  padding-bottom: 25px;
 }
 
 .contact__info--color {
   background-color: $gray-light;
 }
 
-
 .contact__tagline {
   min-width: 140px;
   max-width: 160px;
   margin: 0;
   padding: 0;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -30,7 +28,6 @@
   max-width: 160px;
   margin: 0;
   padding: 0;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -38,17 +35,33 @@
   color: $gray;
 }
 
-.contact__image {
-  display: block;
+.contact__map {
+  background-color: $gray;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   width: 100%;
+  height: 362px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@1x.png");
+  }
 }
+
+.contact__yandex {
+  width: 100%;
+  height: 362px;
+  border: 0;
+}
+
 
 @media (min-width: $tablet-width) {
   .contact__info {
     padding-top: 65px;
-    padding-right: 40px;
+    padding-right: 42px;
     padding-bottom: 56px;
-    padding-left: 41px;
+    padding-left: 42px;
   }
 
   .contact__info--wrapper {
@@ -56,6 +69,7 @@
   }
 
   .contact__tagline {
+    padding-top: 2px;
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
@@ -68,15 +82,28 @@
     text-align: right;
   }
 
+  .contact__street {
+    display: block;
+    margin-bottom: 20px;
+  }
+
   .contact__town {
-    &::before {
-      content: "_";
+    display: block;
+  }
 
-      display: block;
+  .contact__map {
+    height: 400px;
+    background-image: url("../img/bg-map-tablet@1x.png");
 
-      color: transparent;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
     }
   }
+
+  .contact__yandex {
+    height: 400px;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
@@ -86,9 +113,8 @@
 
   .contact__info {
     position: absolute;
-    top: 93px;
+    top: 95px;
     left: 40px;
-
     width: 570px;
     padding-top: 66px;
     padding-right: 85px;
@@ -99,5 +125,13 @@
 
   .contact__address {
     text-align: left;
+  }
+
+  .contact__map {
+    background-image: url("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+    }
   }
 }

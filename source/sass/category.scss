@@ -9,7 +9,7 @@
 .category__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   padding-left: 20px;
 
   background-color: $gray-light;
@@ -128,14 +128,14 @@
   }
 
   .category__item {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
     padding-left: 24px;
   }
 
   .category__title {
-    margin-bottom: 25px;
-    padding-top: 77px;
-    padding-left: 30px;
+    margin-bottom: 26px;
+    padding-top: 76px;
+    padding-left: 28px;
 
     font-weight: 400;
     font-size: 36px;
@@ -152,9 +152,9 @@
   }
 
   .category__description {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
     padding-right: 280px;
-    padding-left: 30px;
+    padding-left: 28px;
 
     font-weight: 400;
     font-size: 16px;
@@ -162,7 +162,7 @@
   }
 
   .category__description--upweight {
-    padding-right: 310px;
+    padding-right: 315px;
   }
 
   .category__title--downweight {
@@ -189,7 +189,7 @@
 
   .category__link {
     margin-bottom: 60px;
-    margin-left: 30px;
+    margin-left: 28px;
 
     font-weight: 400;
     font-size: 20px;
@@ -208,7 +208,7 @@
       width: 24px;
       height: 11px;
       margin-top: 5px;
-      margin-left: 22px;
+      margin-left: 24px;
 
       vertical-align: top;
 
@@ -236,7 +236,7 @@
   .category__list {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 44px;
+    margin-bottom: 43px;
   }
 
   .category__item {
@@ -245,7 +245,7 @@
   }
 
   .category__title {
-    margin-bottom: 74px;
+    margin-bottom: 75px;
     padding-top: 76px;
     padding-left: 189px;
 

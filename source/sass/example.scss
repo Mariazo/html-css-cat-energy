@@ -1,15 +1,16 @@
 .example {
-  padding: 0 20px;
   background-color: $gray-light;
 }
 
 .example__text-block {
-  margin-bottom: 16px;
+  margin-bottom: 34px;
+  padding: 0 20px;
+
 }
 
 .example__title {
   margin: 0;
-  margin-top: 40px;
+  margin-top: 41px;
   margin-bottom: 25px;
   padding: 0;
   font-weight: 400;
@@ -21,7 +22,7 @@
 
 .example__description {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   padding: 0;
   font-weight: 400;
   font-size: 14px;
@@ -41,7 +42,7 @@
 
 .example__item {
   position: relative;
-  margin-bottom: 37px;
+  margin-bottom: 34px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -50,11 +51,11 @@
 }
 
 .example__value {
-  width: 122px;
+  width: 123px;
   margin: 0;
   padding: 0;
-  padding-top: 12px;
-  padding-bottom: 15px;
+  padding-top: 13px;
+  padding-bottom: 17px;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -102,9 +103,14 @@
       linear-gradient(to right, $gray-light 50%, $gray-lighter 50%);
   }
 
+  .example__text-block {
+    padding: 0;
+  }
+
+
   .example__title {
     margin-top: 0;
-    margin-bottom: 65px;
+    margin-bottom: 64px;
     padding-top: 15px;
     font-weight: 400;
     font-size: 60px;
@@ -197,6 +203,8 @@
     justify-content: center;
   }
 
+
+
   .example__text {
     background-color: $gray-light;
   }
@@ -204,6 +212,8 @@
   .example__cost {
     min-width: 328px;
     margin-left: 0;
+    padding-top: 2px;
+
     text-align: left;
   }
 

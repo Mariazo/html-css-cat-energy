@@ -1,5 +1,7 @@
 .site-list {
   margin: 0;
+  margin-right: -20px;
+  margin-left: -20px;
   padding: 0;
 
   list-style: none;
@@ -9,8 +11,7 @@
 
 .site-list__item {
   padding-top: 23px;
-  padding-bottom: 22px;
-
+  padding-bottom: 21px;
   text-align: center;
 
   border-top: 1px solid $gray-lighter;
@@ -36,13 +37,14 @@
 
 @media (min-width: $tablet-width) {
   .site-list {
+    margin: 0;
     border-bottom: 0;
   }
 
   .site-list__item {
     margin-bottom: 14px;
-    padding-top: 23px;
-    padding-bottom: 8px;
+    padding-top: 21px;
+    padding-bottom: 7px;
     text-align: center;
     border-top: none;
   }
@@ -68,7 +70,7 @@
   .site-list__item {
     margin-bottom: 14px;
     margin-left: 35px;
-    padding-top: 21px;
+    padding-top: 22px;
     padding-bottom: 7px;
   }
 
