@@ -55,6 +55,10 @@
   &:checked + .select-list__label::after {
     display: block;
   }
+
+  &:focus + .select-list__label::before {
+    outline: 2px auto $outline-color;
+  }
 }
 
 @media (min-width: $tablet-width) {

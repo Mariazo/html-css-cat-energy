@@ -1,9 +1,21 @@
 .academy {
+  padding-top: 21px;
+  padding-bottom: 31px;
+}
+
+.academy__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 21px;
-  padding-bottom: 31px;
+
+  &:hover .academy__logo,
+  &:focus .academy__logo {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .academy__title {
@@ -22,23 +34,19 @@
   width: 27px;
   height: 34px;
   fill: #666666;
-
-  &:hover {
-    fill: $green;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 @media (min-width: $tablet-width) {
   .academy {
-    justify-content: flex-end;
     width: 165px;
     padding-top: 7px;
     padding-bottom: 8px;
   }
+
+  .academy__link {
+    justify-content: flex-end;
+  }
+
 
   .academy__title {
     margin-right: 23px;

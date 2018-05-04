@@ -23,6 +23,10 @@
     fill: $green;
   }
 
+  &:focus {
+    fill: red;
+  }
+
   &:active {
     opacity: 0.3;
   }

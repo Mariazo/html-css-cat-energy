@@ -18,6 +18,11 @@
   font-family: $default-font;
   color: $black-light;
   text-transform: uppercase;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &::before {
     position: absolute;
@@ -51,6 +56,10 @@
 
   &:checked + .option-list__label::after {
     display: block;
+  }
+
+  &:focus + .option-list__label::before {
+    outline: 2px auto $outline-color;
   }
 }
 
