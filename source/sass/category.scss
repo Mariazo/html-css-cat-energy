@@ -11,7 +11,6 @@
   flex-direction: column;
   margin-bottom: 19px;
   padding-left: 20px;
-
   background-color: $gray-light;
 }
 
@@ -117,7 +116,6 @@
   width: 240px;
   height: 1px;
   margin-top: -1px;
-
   background-color: silver;
 }
 
@@ -170,7 +168,6 @@
       top: 80px;
       right: 91px;
       left: auto;
-
       width: 140px;
       height: 194px;
     }
@@ -181,7 +178,6 @@
       top: 136px;
       right: 27px;
       left: auto;
-
       width: 268px;
       height: 112px;
     }
@@ -190,11 +186,9 @@
   .category__link {
     margin-bottom: 60px;
     margin-left: 28px;
-
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
-
     border: 0;
 
     &::before {
@@ -219,9 +213,9 @@
       cursor: pointer;
     }
 
-    &:hover::after {
+    &:hover::after,
+    &:focus::after {
       width: 33px;
-
       background: url("../img/icon-right-arrow-verylong.svg") no-repeat 0 0;
       cursor: pointer;
     }

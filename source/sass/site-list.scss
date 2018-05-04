@@ -13,7 +13,6 @@
   padding-top: 23px;
   padding-bottom: 21px;
   text-align: center;
-
   border-top: 1px solid $gray-lighter;
 }
 
@@ -35,6 +34,11 @@
   }
 }
 
+.site-list__link--active {
+  border-bottom: 2px solid $green;
+  padding-bottom: 6px;
+}
+
 @media (min-width: $tablet-width) {
   .site-list {
     margin: 0;
@@ -49,14 +53,18 @@
     border-top: none;
   }
 
+  .site-list__item--active {
+    border-bottom: 2px solid $green;
+  }
+
   .site-list__link {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
   }
 
-  .site-list__item--active {
-    border-bottom: 2px solid $green;
+  .site-list__link--active {
+    border-bottom: none;
   }
 }
 
@@ -72,10 +80,6 @@
     margin-left: 35px;
     padding-top: 22px;
     padding-bottom: 7px;
-  }
-
-  .site-list__item--active {
-    border-bottom: 2px solid $green;
   }
 
   .site-list__item--white {

@@ -32,16 +32,13 @@
 }
 
 .slider__button {
+  position: relative;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   font-family: $default-font;
   color: $black-light;
   text-transform: uppercase;
-}
-
-.slider__button--start {
-  position: relative;
 
   &::before {
     content: "";
@@ -132,7 +129,7 @@
     border-radius: 3px;
   }
 
-  .slider__button--start {
+  .slider__button {
     position: relative;
     top: 0;
     left: 202px;

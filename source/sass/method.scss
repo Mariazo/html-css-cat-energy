@@ -47,6 +47,12 @@
   /*outline: 1px dashed blue;*/
 }
 
+.method__button {
+  &:focus {
+    border: 1px solid $focus-color;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .method {
     position: relative;

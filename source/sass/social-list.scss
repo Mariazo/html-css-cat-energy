@@ -18,13 +18,10 @@
   text-align: center;
 }
 
-.social__icon {
-  &:hover {
+.social__link {
+  &:hover .social__icon,
+  &:focus .social__icon {
     fill: $green;
-  }
-
-  &:focus {
-    fill: red;
   }
 
   &:active {
