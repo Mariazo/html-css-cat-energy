@@ -6,14 +6,33 @@
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-bottom: 40px;
     border-top: none;
+  }
+
+  .catalog__item {
+    margin-right: 60px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__list {
     margin-bottom: 47px;
+  }
+
+  .catalog__item {
+    margin-right: 80px;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 }

@@ -4,8 +4,8 @@
 
 .goods__title {
   margin: 0;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 14px;
+  padding-bottom: 12px;
 
   font-weight: 400;
   font-size: 16px;
@@ -98,7 +98,7 @@
 
   .goods__button {
     width: 100%;
-    margin-top: 11px;
+    margin-top: 10px;
     margin-bottom: 27px;
 
     font-size: 16px;
@@ -108,9 +108,9 @@
 
 @media (min-width: $desktop-width) {
   .goods {
-    padding-top: 13px;
+    padding-top: 11px;
     padding-right: 0;
-    padding-bottom: 14px;
+    padding-bottom: 10px;
     padding-left: 0;
 
     border: none;
@@ -120,7 +120,7 @@
   .goods__title {
     width: 160px;
     margin-top: 0;
-    padding-top: 10px;
+    padding-top: 16px;
     padding-bottom: 10px;
   }
 

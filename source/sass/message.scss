@@ -5,13 +5,26 @@
   padding-right: 13px;
   padding-bottom: 12px;
   padding-left: 14px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   font-family: $default-font;
   color: $gray;
   text-transform: uppercase;
+  outline: none;
+  border: 1px solid $input-color;
+
+  &::placeholder {
+    color: $placeholder-color;
+  }
+
+  &:hover {
+    border: 1px solid $input-color--hover;
+  }
+
+  &:focus {
+    border: 1px solid $focus-color;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -18,7 +18,7 @@
     background-size: cover;
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+      (min-resolution: $retina-dppx) {
       background-image: url("../img/index-background-mobile@2x.jpg");
     }
   }
@@ -62,8 +62,6 @@
 
   .page-header__nav {
     display: block;
-
-
   }
 
   .page-header__toggle {
@@ -74,8 +72,6 @@
     display: flex;
     justify-content: space-between;
     width: 440px;
-
-
   }
 }
 
@@ -99,7 +95,7 @@
       background-position: 0 center;
 
       @media (min-resolution: $retina-dpi),
-      (min-resolution: $retina-dppx) {
+        (min-resolution: $retina-dppx) {
         background-image: url("../img/index-background-desktop@2x.jpg");
       }
     }
