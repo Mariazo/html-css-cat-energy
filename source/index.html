@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Main Cat Energy</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <!-- Pixel Glass -->
@@ -184,44 +186,43 @@
 
       <div class="example__slider slider">
 
-        <input class="slider__toggle slider__toggle--start visually-hidden" name="toggle" type="radio" id="toggle-start" checked>
+        <input class="slider__toggle slider__toggle--start visually-hidden" name="toggle" type="radio" id="toggle-start">
         <input class="slider__toggle slider__toggle--finish visually-hidden" name="toggle" type="radio" id="toggle-finish">
 
-        <div class="slider__slides">
-          <div class="slider__item slider__item--start">
-            <!-- <img class="slider__image slider__image--start" src="img/cats.png" width="636" height="517" alt="Фото кота Бориса до начала программы"> -->
-            <picture>
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+        <div class="slider__wrapper">
+          <div class="slider__slides">
+            <div class="slider__item slider__item--start">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-              <img class="slider__image slider__image--start" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Фото кота Бориса до начала программы">
-            </picture>
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img class="slider__image slider__image--start" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Фото кота Бориса до начала программы">
+              </picture>
+            </div>
+            <div class="slider__item slider__item--finish">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img class="slider__image slider__image--finish" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Фото кота Бориса после прохождения программы">
+              </picture>
+            </div>
           </div>
-          <div class="slider__item slider__item--finish">
-            <!-- <img class="slider__image slider__image--finish" src="img/after-mobile@1x.png" width="311" height="232" alt="Фото кота Бориса после прохождения программы"> -->
-            <picture>
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-              <img class="slider__image slider__image--finish" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Фото кота Бориса после прохождения программы">
-            </picture>
+          <div class="slider__block">
+            <label class="slider__text slider__text--start" for="toggle-start" tabindex="0">Было</label>
+            <div class="slider__control">
+              <div class="slider___range"></div>
+              <button class="slider__button" type="button"></button>
+            </div>
+            <label class="slider__text slider__label--text" for="toggle-finish" tabindex="0">Стало</label>
           </div>
-        </div>
-
-        <div class="slider__block">
-          <p class="slider__text slider__text--before" tabindex="0">Было</p>
-          <div class="slider__control">
-            <label class="slider__button slider__button--start" tabindex="0" for="toggle-start"></label>
-            <label class="slider__button slider__button--finish visually-hidden" for="toggle-finish"></label>
-          </div>
-          <p class="slider__text" tabindex="0">Стало</p>
-
         </div>
       </div>
 
