@@ -33,7 +33,8 @@
   display: block;
   width: 27px;
   height: 34px;
-  fill: #666666;
+
+  fill: $academy-icon-color;
 }
 
 @media (min-width: $tablet-width) {

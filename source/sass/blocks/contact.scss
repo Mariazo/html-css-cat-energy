@@ -15,6 +15,7 @@
   max-width: 160px;
   margin: 0;
   padding: 0;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -28,6 +29,7 @@
   max-width: 160px;
   margin: 0;
   padding: 0;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -37,14 +39,15 @@
 
 .contact__map {
   position: relative;
-  background-color: $gray;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+
   width: 100%;
   height: 362px;
 
+  background-color: $gray;
   background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@1x.png");
@@ -68,6 +71,7 @@
 .contact__yandex {
   width: 100%;
   height: 362px;
+
   border: 0;
 }
 
@@ -86,6 +90,7 @@
 
   .contact__tagline {
     padding-top: 2px;
+
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
@@ -109,6 +114,7 @@
 
   .contact__map {
     height: 400px;
+
     background-image: url("../img/bg-map-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -132,13 +138,15 @@
     position: absolute;
     top: 95px;
     left: 40px;
+    z-index: 10;
+
     width: 570px;
     padding-top: 66px;
     padding-right: 85px;
     padding-bottom: 56px;
     padding-left: 75px;
+
     background-color: $white;
-    z-index: 10;
   }
 
   .contact__address {
@@ -147,6 +155,7 @@
 
   .contact__map {
     position: relative;
+
     background-image: url("../img/bg-map-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

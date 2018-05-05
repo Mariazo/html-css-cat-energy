@@ -1,6 +1,7 @@
 .option-list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -11,13 +12,16 @@
 
 .option-list__label {
   position: relative;
+
   padding-left: 47px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   font-family: $default-font;
   color: $black-light;
   text-transform: uppercase;
+
   cursor: pointer;
 
   &:active {
@@ -25,32 +29,37 @@
   }
 
   &::before {
-    position: absolute;
     content: "";
-    display: block;
+    position: absolute;
     top: -3px;
     left: 0;
+
+    display: block;
     width: 30px;
     height: 30px;
-    border: 1px solid #e6e6e6;
     margin-bottom: 13px;
+
+    border: 1px solid #e6e6e6;
     cursor: pointer;
   }
 
   &::after {
-    position: absolute;
     content: "";
-    display: none;
-    background: url("../img/icon-tick.svg") no-repeat center center;
-    width: 21px;
-    height: 16px;
+    position: absolute;
     top: 5px;
     left: 6px;
+
+    display: none;
+    width: 21px;
+    height: 16px;
+
+    background: url("../img/icon-tick.svg") no-repeat center center;
   }
 }
 
 .option-list__input {
   margin-right: 20px;
+
   font-size: 20px;
   line-height: 20px;
 
@@ -77,37 +86,44 @@
 
   .option-list__label {
     position: relative;
+
     padding-left: 57px;
+
     font-size: 20px;
     line-height: 20px;
 
     &::before {
-      position: absolute;
       content: "";
-      display: block;
+      position: absolute;
       top: -4px;
       left: 0;
+
+      display: block;
       width: 40px;
       height: 40px;
-      border: 1px solid #e6e6e6;
       margin-bottom: 13px;
+
+      border: 1px solid #e6e6e6;
       cursor: pointer;
     }
 
     &::after {
-      position: absolute;
       content: "";
-      display: none;
-      background: url("../img/icon-tick.svg") no-repeat center center;
-      width: 21px;
-      height: 16px;
+      position: absolute;
       top: 7px;
       left: 10px;
+
+      display: none;
+      width: 21px;
+      height: 16px;
+
+      background: url("../img/icon-tick.svg") no-repeat center center;
     }
   }
 
   .option-list__input {
     margin-right: 20px;
+
     font-size: 20px;
     line-height: 20px;
 

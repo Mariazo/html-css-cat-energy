@@ -12,7 +12,9 @@
 .site-list__item {
   padding-top: 23px;
   padding-bottom: 21px;
+
   text-align: center;
+
   border-top: 1px solid $gray-lighter;
 }
 
@@ -35,13 +37,15 @@
 }
 
 .site-list__link--active {
-  border-bottom: 2px solid $green;
   padding-bottom: 6px;
+
+  border-bottom: 2px solid $green;
 }
 
 @media (min-width: $tablet-width) {
   .site-list {
     margin: 0;
+
     border-bottom: 0;
   }
 
@@ -49,7 +53,9 @@
     margin-bottom: 14px;
     padding-top: 21px;
     padding-bottom: 7px;
+
     text-align: center;
+
     border-top: none;
   }
 

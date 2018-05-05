@@ -10,6 +10,7 @@
     display: block;
     width: 100%;
     min-height: 305px;
+
     background-color: $green-darken;
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -37,7 +38,6 @@
 /*
 .page-header__js {
   display: block;
-}
 */
 .page-header__nav {
   display: none;
@@ -91,9 +91,11 @@
     &::after {
       top: 0;
       right: 1px;
+
       display: block;
       width: 50%;
       min-height: 696px;
+
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-position: 0 center;
 

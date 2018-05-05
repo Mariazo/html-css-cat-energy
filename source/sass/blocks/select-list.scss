@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   padding-top: 26px;
+
   list-style: none;
 }
 
@@ -11,7 +12,9 @@
 
 .select-list__label {
   position: relative;
+
   padding-left: 47px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -20,28 +23,33 @@
   text-transform: uppercase;
 
   &::before {
-    position: absolute;
-    display: block;
     content: "";
+    position: absolute;
     top: -4px;
     left: 0;
+
+    display: block;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
+
     border: 1px solid #e6e6e6;
+    border-radius: 50%;
     cursor: pointer;
   }
 
   &::after {
-    position: absolute;
-    display: none;
     content: "";
-    background-color: $green;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
+    position: absolute;
     top: 6px;
     left: 9px;
+
+    display: none;
+    width: 12px;
+    height: 12px;
+
+    background-color: $green;
+    border-radius: 50%;
+
     transition: 0.4s;
   }
 }
@@ -49,6 +57,7 @@
 .select-list__input {
   margin-right: 20px;
   margin-left: 30px;
+
   font-size: 20px;
   line-height: 20px;
 
@@ -72,21 +81,25 @@
 
   .select-list__label {
     position: relative;
+
     padding-left: 86px;
+
     font-size: 20px;
     line-height: 20px;
 
     &::before {
       top: -4px;
       left: 28px;
+
       width: 38px;
       height: 38px;
     }
 
     &::after {
+      left: 38px;
+
       width: 18px;
       height: 18px;
-      left: 38px;
     }
   }
 }
