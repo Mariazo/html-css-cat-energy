@@ -105,18 +105,44 @@
   font-family: $default-font;
   color: $black-light;
   text-transform: uppercase;
-}
 
-.category__link::before {
-  content: "";
-  position: absolute;
-  top: -20px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
 
-  display: block;
-  width: 240px;
-  height: 1px;
-  margin-top: -1px;
-  background-color: silver;
+    display: block;
+    width: 240px;
+    height: 1px;
+    margin-top: -1px;
+    background-color: silver;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 11px;
+    margin-top: 2px;
+    margin-left: 12px;
+    vertical-align: top;
+    background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    width: 33px;
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat 0 0;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -196,32 +222,8 @@
     }
 
     &::after {
-      content: "";
-
-      display: inline-block;
-      width: 24px;
-      height: 11px;
       margin-top: 5px;
       margin-left: 24px;
-
-      vertical-align: top;
-
-      background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
-    }
-
-    &:hover {
-      cursor: pointer;
-    }
-
-    &:hover::after,
-    &:focus::after {
-      width: 33px;
-      background: url("../img/icon-right-arrow-verylong.svg") no-repeat 0 0;
-      cursor: pointer;
-    }
-
-    &:active {
-      opacity: 0.3;
     }
   }
 }

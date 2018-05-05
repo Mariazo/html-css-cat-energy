@@ -10,12 +10,11 @@
     display: block;
     width: 100%;
     min-height: 305px;
-
-    background-color: $green;
+    background-color: $green-darken;
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: auto 100%;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
@@ -35,7 +34,11 @@
   align-items: center;
   height: 65px;
 }
-
+/*
+.page-header__js {
+  display: block;
+}
+*/
 .page-header__nav {
   display: none;
 }

@@ -46,8 +46,9 @@
     border: 1px solid $input-color--hover;
   }
 
-  &:invalid {
+  &:invalid:not(:focus):not(:placeholder-shown) {
     border: 1px solid $invalid-color;
+    box-shadow: inset 0 0 0 1px $invalid-color;
 
     & ~ .data-list__icon {
       fill: $invalid-color;
@@ -56,6 +57,7 @@
 
   &:focus {
     border: 1px solid $focus-color;
+    box-shadow: inset 0 0 0 1px $focus-color;
 
     & ~ .data-list__icon {
       fill: $focus-color--icon;
