@@ -6,10 +6,59 @@
   <meta name="viewport" content="width=1, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Cat Form</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* По умолчанию мобильный макет */
+      background-image: url("img/cat-glass/cat-energy-form-mobile.png");
+    }
+
+    /* Планшет */
+
+    @media ( min-width: 768px) {
+      HTML {
+        /* Планшетный макет */
+        background-image: url("img/cat-glass/cat-energy-form-tablet.png");
+      }
+    }
+
+    /* Десктоп */
+
+    @media ( min-width: 1300px) {
+      HTML {
+        /* Десктопный макет */
+        background-image: url("img/cat-glass/cat-energy-form-desktop.png");
+      }
+    }
+
+    BODY {
+      opacity: .5;
+    }
+
+  </style>
+  <!-- // Pixel Glass -->
+
+  <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+  <script src="../node_modules/pixel-glass/script.js"></script>
+  <script src="js/picturefill.min.js"></script>
+
 </head>
 
 <body>
+
+  <!-- SVG-спрайт -->
+  <div style="display: none">
+    <!-- <include src="source/img/sprite.svg"></include> -->
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <!-- END -->
+
   <header class="page-header">
 
     <div class="page-header__wrapper container">
@@ -17,19 +66,19 @@
       <div class="page-header__wrapper-top">
         <div class="page-header__logo logo logo--header">
           <a class="logo__link logo__link--header" href="index.html">
-            <!-- <img class="logo__image logo__image--header" src="img/logo.png" width="202" height="59" alt="Логотип Cat Energy"> -->
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo.png">
-              <source media="(min-width: 768px)" srcset="img/logo.png">
-              <img src="img/logo-mobile.svg" width="191" height="41" alt="Логотип Cat Energy">
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="logo__image logo__image--header" src="img/logo-mobile.svg" width="191" height="41" alt="Логотип Cat Energy">
             </picture>
           </a>
         </div>
-        <button class="page-header__toggle burger-button" type="button" onclick="openMenu()">
+        <button class="page-header__toggle burger-button visually-hidden" type="button" onclick="openMenu()">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <nav class="page-header__nav" id="mobile-menu">
+
+      <nav class="page-header__nav page-header__nav--open">
         <ul class="page-header__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
@@ -49,7 +98,8 @@
   <main class="page-main">
     <div class="container">
       <h1 class="page-main__title">Подбор программы</h1>
-      <p class="page-main__tagline">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
+      <p class="page-main__tagline">Заполните анкету и мы подберем
+        <br> программу питания для вашего кота</p>
 
       <form class="program" action="https://echo.htmlacademy.ru" method="get">
 
@@ -57,15 +107,17 @@
           <ul class="program__cat data-list">
             <li class="data-list__item">
               <label class="data-list__label" for="data-name">Имя:*</label>
-              <input class="data-list__input data-list__input--name" type="text" name="name" placeholder="Барсик" id="data-name" required>
+              <input class="data-list__input data-list__input--name" type="text" name="name" placeholder="Барсик" id="data-name" pattern="^[A-Za-zА-Яа-яЁё\s]+$"
+                required>
             </li>
             <li class="data-list__item">
               <label class="data-list__label" for="data-weight">Вес (кг):*</label>
-              <input class="data-list__input data-list__input--weight" type="text" name="weight" placeholder="7" id="data-weight" required>
+              <input class="data-list__input data-list__input--weight" type="text" name="weight" placeholder="7" id="data-weight" pattern="[0-9]{1,3}"
+                required>
             </li>
             <li class="data-list__item">
               <label class="data-list__label" for="data-age">Возраст (лет): </label>
-              <input class="data-list__input data-list__input--age" type="text" name="age" placeholder="7" id="data-age">
+              <input class="data-list__input data-list__input--age" type="text" name="age" placeholder="7" id="data-age" pattern="[0-9]{1,3}">
             </li>
           </ul>
         </div>
@@ -74,11 +126,13 @@
         <div class="program__field program__field--category">
           <ul class="program__select select-list">
             <li class="select-list__item">
-              <input class="select-list__input select-list__input--downweight visually-hidden" type="radio" name="category" value="downweight" id="data-downweight" checked>
+              <input class="select-list__input select-list__input--downweight visually-hidden" type="radio" name="category" value="downweight"
+                id="data-downweight" checked>
               <label class="select-list__label" for="data-downweight">Похудение</label>
             </li>
             <li class="select-list__item">
-              <input class="select-list__input select-list__input--upweight visually-hidden" type="radio" name="category" value="upweight" id="data-upweight">
+              <input class="select-list__input select-list__input--upweight visually-hidden" type="radio" name="category" value="upweight"
+                id="data-upweight">
               <label class="select-list__label" for="data-upweight">Набор массы</label>
             </li>
             <li class="select-list__item">
@@ -91,21 +145,25 @@
 
         <div class="program__field program__field--contact">
           <h2 class="program__field-title program__field-title--contact">Контактные данные (владельца кота)</h2>
-
           <ul class="program__cat-owner data-list data-list--owner">
             <li class="data-list__item data-list__item--owner">
               <label class="data-list__label" for="data-email">E-mail:*</label>
               <input class="data-list__input data-list__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" id="data-email"
                 required>
+              <svg class="data-list__icon data-list__icon--mail">
+                <use xlink:href="#icon-mail"></use>
+              </svg>
             </li>
             <li class="data-list__item data-list__item--owner">
               <label class="data-list__label" for="data-phone">Телефон:*</label>
               <input class="data-list__input data-list__input--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" id="data-phone"
-                required>
+                pattern="\d{1}\s?[\(]{0,1}\d[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
+              <svg class="data-list__icon data-list__icon--phone">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
             </li>
           </ul>
         </div>
-
 
         <div class="program__field program__field--comment">
           <h2 class="program__field-title program__field-title--comment">Комментарий</h2>
@@ -122,7 +180,8 @@
 
           <ul class="program__option option-list">
             <li class="option-list__item">
-              <input class="option-list__input option-list__input--sugar visually-hidden" type="checkbox" name="sugar" id="data-sugar" checked>
+              <input class="option-list__input option-list__input--sugar visually-hidden" type="checkbox" name="sugar" id="data-sugar"
+                checked>
               <label class="option-list__label" for="data-sugar">Сахарозаменитель</label>
             </li>
             <li class="option-list__item">
@@ -140,7 +199,6 @@
           </ul>
         </div>
 
-
         <div class="program__send">
           <button class="program__button button button--green" type="submit">Отправить заявку</button>
           <p class="program__warning">* — Обязательные поля</p>
@@ -149,24 +207,25 @@
     </div>
     <section class="contact">
       <h2 class="visually-hidden">Наши контакты</h2>
-      <div class="contact__info--wrapper contact__info--color container">
+      <div class="contact__info--wrapper  container">
 
         <div class="contact__info">
           <p class="contact__tagline">Приглашаем
             <br> к сотрудничеству дилеров!</p>
-          <p class="contact__address">ул. Большая Конюшенная, д. 19/8
+          <p class="contact__address">
+            <span class="contact__street">ул. Большая Конюшенная, д. 19/8</span>
             <span class="contact__town">Санкт-Петербург</span>
           </p>
         </div>
       </div>
 
-      <div class="contact__map">
-        <img class="contact__image" src="img/bg-map-desktop.png" width="320" height="400" alt="Карта проезда">
+      <div class="contact__map" id="map">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3gdpnfLEtX26flulsb7WXn-44dsznuxc"></script>
+        <script src="js/map.js"></script>
+        <!-- <iframe class="contact__yandex" src="https://yandex.ru/map-widget/v1/-/CBUnrPx5XB"></iframe> -->
       </div>
     </section>
-
   </main>
-
 
   <footer class="page-footer page-footer--color ">
 
@@ -178,39 +237,46 @@
       </div>
 
       <ul class="page-footer__social social-list">
-
         <li class="social-list__item social-list__item--vk social">
-
-
           <a class="social__link social__link--vk" href="#">
-
+            <svg class="social__icon social__icon--vk" width="22" height="12">
+              <use xlink:href="#icon-vk"></use>
+            </svg>
             <span class="visually-hidden">VK.com</span>
           </a>
         </li>
 
         <li class="social-list__item social">
           <a class="social__link social__link--insta" href="#">
-
+            <svg class="social__icon social__icon--insta" width="16" height="16">
+              <use xlink:href="#icon-insta"></use>
+            </svg>
             <span class="visually-hidden">Instagram</span>
           </a>
         </li>
 
         <li class="social-list__item social">
           <a class="social__link social__link--fb" href="#">
-
+            <svg class="social__icon social__icon--fb" width="10" height="19">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
       </ul>
 
       <div class="page-footer__academy academy">
-        <p class="academy__title">HTML Academy</p>
         <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="academy__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+          <p class="academy__title">HTML Academy</p>
+          <!-- <img class="academy__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy"> -->
+          <svg class="academy__logo" width="27" height="34">
+            <use xlink:href="#icon-academy"></use>
+          </svg>
         </a>
       </div>
     </div>
   </footer>
+
   <script src="js/script.js"></script>
 
 </body>
