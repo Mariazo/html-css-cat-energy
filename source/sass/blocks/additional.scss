@@ -1,4 +1,7 @@
 .additional__list {
+  display: flex;
+  flex-direction: column;
+
   margin-bottom: 39px;
 
   list-style: none;
