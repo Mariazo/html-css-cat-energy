@@ -66,7 +66,6 @@
       <div class="page-header__wrapper-top">
         <div class="page-header__logo logo logo--header">
           <a class="logo__link logo__link--header" href="index.html">
-            <!-- <img class="logo__image logo__image--header" src="img/logo.png" width="202" height="59" alt="Логотип Cat Energy"> -->
             <picture>
               <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -118,8 +117,7 @@
             </li>
             <li class="data-list__item">
               <label class="data-list__label" for="data-age">Возраст (лет): </label>
-              <input class="data-list__input data-list__input--age" type="text" name="age" placeholder="7" id="data-age pattern=" [0-9]{1,3}
-                "">
+              <input class="data-list__input data-list__input--age" type="text" name="age" placeholder="7" id="data-age" pattern="[0-9]{1,3}">
             </li>
           </ul>
         </div>
@@ -147,24 +145,7 @@
 
         <div class="program__field program__field--contact">
           <h2 class="program__field-title program__field-title--contact">Контактные данные (владельца кота)</h2>
-
           <ul class="program__cat-owner data-list data-list--owner">
-
-            <!-- SVG-спрайт иконок контактов -->
-            <svg style="display:none">
-
-              <symbol id="icon-mail" viewBox="0 0 17 13" width="100%" height="100%">
-                <path d="M15.6 11.6H1.4V5.8H0V13h17V5.8h-1.4v5.8zM0 0v2.3l8.5 7.1L17 2.3V0H0zm15.6 1.6L8.5 7.5 1.4 1.6v-.2h14.2v.2z"></path>
-              </symbol>
-
-              <symbol id="icon-phone" viewBox="0 0 20 20" width="100%" height="100%">
-                <path d="M17.9 9.4H9.4v1.2h8.5l-2.1 2.1.9.9 3.1-3.1c.2-.2.2-.6 0-.9l-3.1-3.1-.9.9 2.1 2zm-9.8 10v-6.2c0-.3-.3-.6-.6-.6H3.1c0 .7.6 1.2 1.2 1.2h2.5v5H3.1c-1 .1-1.8-.7-1.9-1.7v-14c0-1 .8-1.8 1.7-1.8h3.9v5H4.4c-.7 0-1.2.6-1.2 1.2h4.4c.3 0 .6-.3.6-.6V.6C8.1.3 7.8 0 7.5 0H3.1C1.5-.1.1 1.2 0 2.9v13.9c-.1 1.7 1.2 3.1 2.9 3.1h4.6c.3.1.6-.2.6-.5z"></path>
-              </symbol>
-
-            </svg>
-            <!-- END -->
-
-
             <li class="data-list__item data-list__item--owner">
               <label class="data-list__label" for="data-email">E-mail:*</label>
               <input class="data-list__input data-list__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" id="data-email"
