@@ -26,19 +26,18 @@
   color: $black-light;
   text-transform: uppercase;
 
-  &:hover {
+  &[href]:hover {
     cursor: pointer;
     opacity: 0.6;
   }
 
-  &:active {
+  &[href]:active {
     opacity: 0.3;
   }
 }
 
 .site-list__link--active {
   padding-bottom: 6px;
-
   border-bottom: 2px solid $green;
 }
 

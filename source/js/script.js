@@ -4,16 +4,17 @@
 // }
 var menuBurger = document.querySelector(".page-header__toggle");
 var openMenu = document.querySelector(".page-header__nav");
-var closeMenu = document.querySelector(".burger-button");
+var closeMenu = document.querySelector(".page-header__toggle");
 
 
 if (openMenu.classList.contains("page-header__nav--open")) {
   openMenu.classList.remove("page-header__nav--open");
 }
 
-if (closeMenu.classList.contains("burger-button--close")) {
-  closeMenu.classList.remove("burger-button--close");
+if (menuBurger.classList.contains("burger-button")) {
+menuBurger.classList.remove("visually-hidden");
 }
+
 
 menuBurger.addEventListener("click", function (evt) {
   evt.preventDefault();
