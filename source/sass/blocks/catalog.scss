@@ -33,6 +33,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog__list {
+    justify-content: flex-start;
     margin-bottom: 47px;
   }
 
