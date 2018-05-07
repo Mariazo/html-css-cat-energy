@@ -190,7 +190,7 @@
 
     background-color: $white;
     background-image: linear-gradient(to bottom, white 208px, transparent 208px),
-      linear-gradient(to right, $gray-light 975px, $gray-lighter 975px);
+      linear-gradient(to right, $gray-light 50%, $gray-lighter 50%);
   }
 
   .example__text-block {
