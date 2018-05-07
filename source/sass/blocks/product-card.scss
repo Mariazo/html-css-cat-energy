@@ -113,12 +113,13 @@
     content: "";
     position: absolute;
     top: 27px;
-    left: 126px;
+    left: 50%;
     z-index: 2;
 
     display: block;
     width: 30px;
     height: 30px;
+    margin-left: -15px;
 
     background-image: url("../img/icon-plus.svg");
   }
@@ -149,7 +150,7 @@
   }
 
   .product-card__title {
-    width: 130px;
+    width: 140px;
     margin: 0 auto;
     margin-top: 37px;
     margin-bottom: 19px;
@@ -230,10 +231,11 @@
 
     &::before {
       top: 53px;
-      left: 132px;
+      left: 50%;
 
       width: 60px;
       height: 60px;
+      margin-left: -30px;
     }
   }
 }
@@ -255,7 +257,6 @@
   .product-add__button {
     &::before {
       top: 54px;
-      left: 92px;
     }
   }
 }

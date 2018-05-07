@@ -9,45 +9,7 @@
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      /* По умолчанию мобильный макет */
-      background-image: url("img/cat-glass/cat-energy-form-mobile.png");
-    }
-
-    /* Планшет */
-
-    @media ( min-width: 768px) {
-      HTML {
-        /* Планшетный макет */
-        background-image: url("img/cat-glass/cat-energy-form-tablet.png");
-      }
-    }
-
-    /* Десктоп */
-
-    @media ( min-width: 1300px) {
-      HTML {
-        /* Десктопный макет */
-        background-image: url("img/cat-glass/cat-energy-form-desktop.png");
-      }
-    }
-
-    BODY {
-      opacity: .5;
-    }
-
-  </style>
-  <!-- // Pixel Glass -->
-
-  <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
-  <script src="../node_modules/pixel-glass/script.js"></script>
   <script src="js/picturefill.min.js"></script>
-
 </head>
 
 <body>
@@ -59,9 +21,7 @@
   <!-- END -->
 
   <header class="page-header">
-
     <div class="page-header__wrapper container">
-
       <div class="page-header__wrapper-top">
         <div class="page-header__logo logo logo--header">
           <a class="logo__link logo__link--header" href="index.html">
@@ -91,6 +51,7 @@
       </nav>
     </div>
   </header>
+
   <main class="page-main">
     <div class="container">
       <h1 class="page-main__title">Подбор программы</h1>
@@ -156,7 +117,6 @@
         </div>
         <div class="program__field program__field--comment">
           <h2 class="program__field-title program__field-title--comment">Комментарий</h2>
-
           <div class="program__message message">
             <label class="visually-hidden" for="data-message">Введите комментарий:</label>
             <textarea class="message__text" name="message" placeholder="Расскажите обо всех повадках кота" cols="30" rows="4" id="data-message"></textarea>
@@ -164,7 +124,6 @@
         </div>
         <div class="program__field program__field--additional">
           <h2 class="program__field-title program__field-title--additional">Дополнительно</h2>
-
           <ul class="program__option option-list">
             <li class="option-list__item">
               <input class="option-list__input option-list__input--sugar visually-hidden" type="checkbox" name="sugar" id="data-sugar"
@@ -193,7 +152,6 @@
     <section class="contact">
       <h2 class="visually-hidden">Наши контакты</h2>
       <div class="contact__info--wrapper  container">
-
         <div class="contact__info">
           <p class="contact__tagline">Приглашаем
             <br> к сотрудничеству дилеров!</p>
@@ -209,6 +167,7 @@
       </div>
     </section>
   </main>
+
   <footer class="page-footer page-footer--color ">
     <div class="page-footer__wrapper container">
       <div class="page-footer__logo logo logo--footer">
@@ -252,6 +211,9 @@
       </div>
     </div>
   </footer>
+
   <script src="js/script.js"></script>
+
 </body>
+
 </html>
