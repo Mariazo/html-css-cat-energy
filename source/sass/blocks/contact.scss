@@ -53,20 +53,6 @@
     background-image: url("../img/bg-map-mobile@1x.png");
   }
 }
-/*
-  &::before {
-    position: absolute;
-    content: "";
-    top: 39%;
-    left: 40%;
-    display: block;
-    width: 55px;
-    height: 53px;
-    background-image: url("../img/map-pin.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 2;
-  }*/
 
 .contact__yandex {
   width: 100%;
@@ -122,12 +108,6 @@
     }
   }
 }
-/*    &::before {
-      top: 36%;
-      left: 42%;
-      width: 113px;
-      height: 106px;
-    }*/
 
 @media (min-width: $desktop-width) {
   .contact {
@@ -141,7 +121,7 @@
     z-index: 10;
 
     width: 570px;
-    padding-top: 66px;
+    padding-top: 65px;
     padding-right: 85px;
     padding-bottom: 56px;
     padding-left: 75px;
@@ -163,8 +143,3 @@
     }
   }
 }
-/*
-    &::before {
-      top: 38%;
-      left: 71.4%;
-    }*/

@@ -1,7 +1,6 @@
 .additional__list {
   display: flex;
   flex-direction: column;
-
   margin-bottom: 39px;
 
   list-style: none;
@@ -74,7 +73,7 @@
 
 @media (min-width: $desktop-width) {
   .additional {
-    margin-bottom: 47px;
+    margin-bottom: 45px;
   }
 
   .additional__wrapper {
@@ -85,7 +84,7 @@
 
   .additional__title {
     margin-left: -40px;
-    padding-bottom: 78px;
+    padding-bottom: 80px;
 
     font-size: 36px;
     line-height: 38px;

@@ -9,46 +9,11 @@
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      /* По умолчанию мобильный макет */
-      background-image: url("img/cat-glass/cat-energy-index-mobile.png");
-    }
-
-    /* Планшет */
-
-    @media ( min-width: 768px) {
-      HTML {
-        /* Планшетный макет */
-        background-image: url("img/cat-glass/cat-energy-index-tablet.png");
-      }
-    }
-
-    /* Десктоп */
-
-    @media ( min-width: 1300px) {
-      HTML {
-        /* Десктопный макет */
-        background-image: url("img/cat-glass/cat-energy-index-desktop.png");
-      }
-    }
-
-    BODY {
-      opacity: .5;
-    }
-  </style>
-  <!-- // Pixel Glass -->
-  <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
-  <script src="../node_modules/pixel-glass/script.js"></script>
   <script src="js/picturefill.min.js"></script>
-
 </head>
 
 <body>
+
   <!-- SVG-спрайт -->
   <div style="display: none">
     <include src="build/img/sprite.svg"></include>
@@ -56,9 +21,7 @@
   <!-- END -->
 
   <header class="page-header page-header--background">
-
     <div class="page-header__wrapper container">
-
       <div class="page-header__wrapper-top">
         <div class="page-header__logo logo logo--header">
           <a class="logo__link logo__link--header">
@@ -73,7 +36,6 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-
       <nav class="page-header__nav page-header__nav--open">
         <ul class="page-header__list site-list">
           <li class="site-list__item site-list__item--white site-list__item--active">
@@ -87,13 +49,10 @@
           </li>
         </ul>
       </nav>
-
     </div>
-
   </header>
 
   <main class="page-main">
-
     <section class="method container">
       <h1 class="method__title">Функциональное питание для котов</h1>
       <p class="method__tagline">Занялся собой? Займись котом!</p>
@@ -104,13 +63,11 @@
         <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
         <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
         <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
-
         <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
         <img class="method__product" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Товар Cat Energy">
       </picture>
     </section>
-
     <section class="category container">
       <h2 class="visually-hidden">Программы питания</h2>
       <ul class="category__list">
@@ -129,7 +86,6 @@
         </li>
       </ul>
     </section>
-
     <section class="advantage container">
       <h2 class="advantage__title">Как это работает</h2>
       <ul class="advantage__list">
@@ -147,7 +103,6 @@
         </li>
       </ul>
     </section>
-
     <section class="example">
       <div class="example__text-block">
         <h2 class="example__title">Живой пример</h2>
@@ -179,7 +134,6 @@
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-
                 <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
                 <img class="slider__image slider__image--start" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Фото кота Бориса до начала программы">
@@ -190,7 +144,6 @@
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
-
                 <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
                 <img class="slider__image slider__image--finish" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Фото кота Бориса после прохождения программы">
@@ -203,12 +156,11 @@
               <div class="slider___range"></div>
               <button class="slider__button" type="button"></button>
             </div>
-            <label class="slider__text slider__label--text" for="toggle-finish" tabindex="0">Стало</label>
+            <label class="slider__text slider__label--text" for="toggle-finish" tabindex="0">Стало </label>
           </div>
         </div>
       </div>
     </section>
-
     <section class="contact">
       <h2 class="visually-hidden">Наши контакты</h2>
       <div class="contact__info--wrapper  container">
@@ -226,19 +178,15 @@
         <script src="js/map.js"></script>
       </div>
     </section>
-
   </main>
 
   <footer class="page-footer page-footer--color ">
-
     <div class="page-footer__wrapper container">
-
       <div class="page-footer__logo logo logo--footer">
         <a class="logo__link logo__link--footer">
           <img class="logo__image logo__image--footer" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
         </a>
       </div>
-
       <ul class="page-footer__social social-list">
         <li class="social-list__item social-list__item--vk social">
           <a class="social__link social__link--vk" href="#">
@@ -265,7 +213,6 @@
           </a>
         </li>
       </ul>
-
       <div class="page-footer__academy academy">
         <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="academy__title">HTML Academy</p>
@@ -274,12 +221,11 @@
           </svg>
         </a>
       </div>
-
     </div>
-
   </footer>
 
   <script src="js/script.js"></script>
+
 </body>
 
 </html>
