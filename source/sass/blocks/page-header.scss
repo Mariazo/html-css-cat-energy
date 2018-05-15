@@ -84,6 +84,11 @@
     padding-top: 52px;
   }
 
+  .page-header__list {
+    flex-wrap: wrap;
+    width: 610px;
+  }
+
   .page-header--background {
     &::after {
       top: 0;
