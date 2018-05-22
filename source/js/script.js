@@ -16,7 +16,7 @@ menuBurger.addEventListener("click", function (evt) {
   closeMenu.classList.toggle("burger-button--close");
 });
 
-// Закрытие меню по клаваише ESC
+// Закрытие меню по клавише ESC
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
@@ -25,6 +25,38 @@ window.addEventListener("keydown", function (evt) {
     }
     if (closeMenu.classList.contains("burger-button--close")) {
       closeMenu.classList.remove("burger-button--close");
+    }
+  }
+});
+
+
+// Появление окна после нажатия кнопки ЗАКАЗАТЬ
+
+
+var modalOpen = document.querySelector(".modal");
+var items = document.querySelectorAll(".order-js");
+
+for (var i = 0; i < items.length; i++) {
+//  items[i].onclick = function (evt) {
+    items[i].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    modalOpen.classList.toggle("modal__show");
+  });
+}
+
+var modalClose = modalOpen.querySelector(".modal__close");
+
+modalClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  modalOpen.classList.remove("modal__show");
+});
+
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (modalOpen.classList.contains("modal__show")) {
+      modalOpen.classList.remove("modal__show");
     }
   }
 });
