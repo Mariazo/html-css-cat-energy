@@ -72,6 +72,13 @@ gulp.task("webp", function() {
     .pipe(gulp.dest("source/img"));
 });
 
+/*Отслеживание JS*/
+gulp.task("js", function () {
+  return gulp.src("source/**/*.js")
+    .pipe(gulp.dest("build"));
+});
+
+
 
 gulp.task("serve", function() {
   server.init({
@@ -84,6 +91,7 @@ gulp.task("serve", function() {
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/*.html", ["html"]);
+  gulp.watch("source/**/*.js", ["js"]);
 });
 
 
@@ -95,6 +103,7 @@ gulp.task("build", function (done) {
         "style",
         "sprite",
         "html",
+        "js",
         done
     );
 });
