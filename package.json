@@ -48,6 +48,7 @@
     "node": "8.11"
   },
   "dependencies": {
+    "gulp-cli": "^2.0.1",
     "normalize.css": "^8.0.0"
   }
 }
